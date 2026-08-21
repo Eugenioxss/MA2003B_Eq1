@@ -38,5 +38,7 @@ Sigue estos pasos para ejecutar el proyecto localmente:
 
 ## 🗂️ Estructura Principal
 * `1_join_raw.ipynb`: Une las bases de datos separadas en una sola historia completa.
+* `1.5_xray_lostData.ipynb`: Funciona como una radiografía de los datos, analizando la información faltante o perdida.
 * `2_clean_split.ipynb`: Limpia los datos, aplica límites físicos y separa por variables.
-* `data/`: Directorio donde se almacenan los datos (no versionado en git si se ignoran los .parquet).
+* `3_features.ipynb`: Último código de esta etapa para crear un "Dataset Inteligente" enfocado en predecir el Ozono ($O_3$). Toma las tablas limpias del Script 2, las unifica y calcula la trigonometría y la "memoria" matemática (lags).
+* `data/`: Directorio donde se almacenan los datos.
