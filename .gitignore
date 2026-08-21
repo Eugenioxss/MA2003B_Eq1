@@ -1,0 +1,22 @@
+# Ambientes virtuales
+venv/
+env/
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Archivos de configuración
+*.ini
+*.cfg
+
+# Credenciales
+.env
+secrets.json
+
+# Sistema
+.DS_Store
+Thumbs.db
+
