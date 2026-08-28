@@ -1,8 +1,3 @@
-"""
-Etapa 2 CRISP-DM — Análisis Descriptivo de Calidad del Aire (SIMA)
-Equipo 1 · MA2003B · Tecnológico de Monterrey
-"""
-
 import pandas as pd
 import numpy as np
 import matplotlib
@@ -19,9 +14,7 @@ plt.rcParams.update({'font.size': 10, 'figure.dpi': 300, 'savefig.dpi': 300,
 BASE = 'data/processed/variables'
 OUT  = 'results/figures'
 
-# ══════════════════════════════════════════════════════════════════
-# PASO 1 — Carga y unión de datos
-# ══════════════════════════════════════════════════════════════════
+#cargar archivos
 archivos = {
     'O3':   f'{BASE}/O3_clean.parquet',
     'PM2.5': f'{BASE}/PM2.5_clean.parquet',
@@ -44,25 +37,25 @@ for nombre, ruta in archivos.items():
     print(f"  Tipos: {dict(df.dtypes)}")
     print(f"  Estaciones únicas ({df['Estacion'].nunique()}): {sorted(df['Estacion'].unique())}")
 
-# Verificar consistencia de tipos Date y Estacion
+#verificar tipos Date y Estacion
 print("\n--- Verificación de tipos ---")
 for nombre, df in dfs.items():
     print(f"  {nombre}: Date={df['Date'].dtype}, Estacion={df['Estacion'].dtype}")
 
-# Detectar inconsistencias en nombres de estación
+#inconsistencias en nombres de estación
 todas_estaciones = set()
 for nombre, df in dfs.items():
     todas_estaciones.update(df['Estacion'].unique())
 print(f"\nEstaciones únicas globales ({len(todas_estaciones)}): {sorted(todas_estaciones)}")
 
-# Inner join secuencial
+#inner join secuencial
 print("\n--- Inner Join ---")
 merged = dfs['O3'].copy()
 for nombre in ['PM2.5', 'PM10', 'SR', 'TOUT']:
     merged = merged.merge(dfs[nombre], on=['Date', 'Estacion'], how='inner')
     print(f"  Después de join con {nombre}: {len(merged):,} filas")
 
-# Limpieza final
+#limpieza final
 antes_drop = len(merged)
 merged = merged.dropna()
 print(f"  Después de dropna: {len(merged):,} (removidas: {antes_drop - len(merged)})")
@@ -71,7 +64,7 @@ antes_dedup = len(merged)
 merged = merged.drop_duplicates(subset=['Date', 'Estacion'])
 print(f"  Después de drop_duplicates: {len(merged):,} (removidas: {antes_dedup - len(merged)})")
 
-# Reportar pérdida
+#reportar pérdida
 min_filas = min(len(df) for df in dfs.values())
 max_filas = max(len(df) for df in dfs.values())
 print(f"\n  Archivo más restrictivo: {min_filas:,} filas")
@@ -79,7 +72,7 @@ print(f"  Dataset final: {len(merged):,} filas")
 print(f"  % pérdida vs más restrictivo: {100*(1 - len(merged)/min_filas):.2f}%")
 print(f"  % pérdida vs más grande: {100*(1 - len(merged)/max_filas):.2f}%")
 
-# Guardar para referencia
+#guardar para referencia
 print(f"\nColumnas finales: {list(merged.columns)}")
 print(f"Dimensión final: {merged.shape}")
 print(f"Tipos finales:\n{merged.dtypes}")
@@ -89,16 +82,14 @@ num_cols = [c for c in merged.columns if c not in ['Date', 'Estacion']]
 print(f"Variables numéricas: {num_cols}")
 print(merged[num_cols].head(10))
 
-# ══════════════════════════════════════════════════════════════════
-# PASO 2 — Análisis Estadístico
-# ══════════════════════════════════════════════════════════════════
+#análisis estadístico
 print("\n" + "="*60)
 print("PASO 2: Análisis Estadístico")
 print("="*60)
 
 print(f"\nDimensión del dataset: {merged.shape[0]} filas × {merged.shape[1]} columnas")
 
-# --- Tendencia central, dispersión, posición ---
+#tendencia central, dispersión, posición
 stats_list = []
 for col in num_cols:
     s = merged[col]
@@ -110,7 +101,7 @@ for col in num_cols:
     n_outliers = ((s < lower) | (s > upper)).sum()
     pct_outliers = 100 * n_outliers / len(s)
     
-    # Moda: redondear a 1 decimal para variables continuas
+    #moda con redondeo a 1 decimal para variables continuas
     moda_val = s.round(1).mode()
     moda_str = moda_val.iloc[0] if len(moda_val) > 0 else np.nan
     
@@ -134,7 +125,7 @@ stats_df = pd.DataFrame(stats_list)
 print("\n--- Estadísticas descriptivas ---")
 print(stats_df.to_string(index=False))
 
-# --- Estacion: frecuencia ---
+#estacion - frecuencia
 freq = merged['Estacion'].value_counts().reset_index()
 freq.columns = ['Estacion', 'Conteo']
 freq['% Relativo'] = round(100 * freq['Conteo'] / freq['Conteo'].sum(), 2)
@@ -142,17 +133,17 @@ freq = freq.sort_values('Estacion')
 print("\n--- Distribución de frecuencia por Estación ---")
 print(freq.to_string(index=False))
 
-# --- Correlación Pearson ---
+#correlación Pearson
 corr_pearson = merged[num_cols].corr(method='pearson')
 print("\n--- Matriz de Correlación (Pearson) ---")
 print(corr_pearson.round(4).to_string())
 
-# --- Correlación Spearman ---
+#correlación Spearman
 corr_spearman = merged[num_cols].corr(method='spearman')
 print("\n--- Matriz de Correlación (Spearman) ---")
 print(corr_spearman.round(4).to_string())
 
-# --- Correlación O3-PM desglosada por Estacion ---
+#correlación O3-PM desglosada por Estacion
 print("\n--- Correlación Pearson O3 vs PM por Estación ---")
 corr_by_est = []
 for est in sorted(merged['Estacion'].unique()):
@@ -166,14 +157,12 @@ corr_est_df = pd.DataFrame(corr_by_est)
 print(corr_est_df.to_string(index=False))
 
 
-# ══════════════════════════════════════════════════════════════════
-# PASO 3 — Visualizaciones
-# ══════════════════════════════════════════════════════════════════
+#visualizaciones
 print("\n" + "="*60)
 print("PASO 3: Generación de Visualizaciones")
 print("="*60)
 
-# 1. Boxplots por estación
+#boxplots por estación
 fig, axes = plt.subplots(1, 3, figsize=(18, 6))
 for ax, var in zip(axes, ['O3', 'PM2.5', 'PM10']):
     merged.boxplot(column=var, by='Estacion', ax=ax, grid=False,
@@ -188,7 +177,7 @@ plt.savefig(f'{OUT}/boxplot_estaciones.png')
 plt.close()
 print("  [OK] boxplot_estaciones.png")
 
-# 2. Histogramas con KDE
+#histogramas con KDE
 fig, axes = plt.subplots(1, 3, figsize=(18, 5))
 for ax, var, color in zip(axes, ['O3', 'PM2.5', 'PM10'], ['#2196F3', '#FF9800', '#4CAF50']):
     data = merged[var].dropna()
@@ -207,7 +196,7 @@ plt.savefig(f'{OUT}/histogramas_distribucion.png')
 plt.close()
 print("  [OK] histogramas_distribucion.png")
 
-# 3. Heatmap de correlación Pearson
+#heatmap de correlación Pearson
 fig, ax = plt.subplots(figsize=(8, 6))
 mask = np.triu(np.ones_like(corr_pearson, dtype=bool), k=1)
 sns.heatmap(corr_pearson, annot=True, fmt='.3f', cmap='RdBu_r', center=0,
@@ -219,7 +208,7 @@ plt.savefig(f'{OUT}/heatmap_correlacion.png')
 plt.close()
 print("  [OK] heatmap_correlacion.png")
 
-# 4. Distribución de registros por estación (barras)
+#distribución de registros por estación (barras)
 fig, ax = plt.subplots(figsize=(10, 5))
 freq_sorted = freq.sort_values('Conteo', ascending=True)
 bars = ax.barh(freq_sorted['Estacion'], freq_sorted['Conteo'], color='steelblue', edgecolor='white')
@@ -233,7 +222,7 @@ plt.savefig(f'{OUT}/piechart_estaciones.png')
 plt.close()
 print("  [OK] piechart_estaciones.png")
 
-# 5. Scatter PM2.5 vs O3 coloreado por SR
+#scatter PM2.5 vs O3 coloreado por SR
 fig, ax = plt.subplots(figsize=(10, 7))
 sc = ax.scatter(merged['PM2.5'], merged['O3'], c=merged['SR'], 
                 cmap='YlOrRd', alpha=0.4, s=8, edgecolors='none')
@@ -242,7 +231,7 @@ ax.set_xlabel('PM2.5 (μg/m³)')
 ax.set_ylabel('O3 (ppb)')
 ax.set_title('PM2.5 vs O3, coloreado por Radiación Solar')
 
-# Añadir línea de tendencia
+#añadir línea de tendencia
 z = np.polyfit(merged['PM2.5'], merged['O3'], 1)
 p = np.poly1d(z)
 x_line = np.linspace(merged['PM2.5'].min(), merged['PM2.5'].min() + (merged['PM2.5'].max() - merged['PM2.5'].min()) * 0.95, 100)
@@ -260,7 +249,7 @@ print("="*60)
 
 
 # ══════════════════════════════════════════════════════════════════
-# EXPORTAR TABLAS EN MARKDOWN
+# EXPORTAR TABLAS EN MARKDOWN (HIGHLY IA Based)
 # ══════════════════════════════════════════════════════════════════
 print("\n" + "="*60)
 print("TABLAS EN FORMATO MARKDOWN")
