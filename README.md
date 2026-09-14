@@ -1,4 +1,4 @@
-# 🌪️ AirQuality Analytics (MA2003B_Eq1)
+# 🌪️ Pulso Atmosférico (MA2003B_Eq1)
 
 Sistema integral de análisis, preprocesamiento y modelado predictivo de calidad del aire (específicamente Ozono, $O_3$) para el Área Metropolitana de Monterrey (AMM).
 
