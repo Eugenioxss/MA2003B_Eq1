@@ -1,0 +1,48 @@
+﻿=====================================================================================
+INICIANDO FASE 2: noche2_refit CON NWP FEATURES (num_threads=5)
+=====================================================================================
+
+================================================================================
+  CARGANDO DATOS FASE 2 HORIZONTE h=1
+================================================================================
+  Referencia Fase 1 (refit_best) h= 1 -> Val OOF: 4.8663 | Test: 4.8663
+
+  --- Ejecutando refit_nwp_best (h=1) ---
+      Fold Q1 | N=27002 | BestIter=1983 | RMSE= 4.677 | Tiempo=253.2s
+      Fold Q2 | N=26675 | BestIter=1263 | RMSE= 5.888 | Tiempo=185.9s
+      Fold Q3 | N=27584 | BestIter=1999 | RMSE= 4.513 | Tiempo=264.8s
+      Fold Q4 | N=27287 | BestIter=2000 | RMSE= 4.238 | Tiempo=256.4s
+    Val OOF RMSE: 4.8632 (vs Fase 1 4.8663 -> -0.0031) | Pk RMSE:   9.89
+    Reentrenando 2190 ßrboles con 3 semillas...
+    Test 2025 RMSE: 4.8509 (vs Fase 1 4.8663 -> -0.0154) | R2: 0.9469 | Pk RMSE:   9.69
+    Predicciones guardadas en D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche2\refit\preds\refit_nwp_best_h1.parquet
+
+  --- Ejecutando refit_nwp_peak_w (h=1) ---
+      Fold Q1 | N=27002 | BestIter=1999 | RMSE= 4.721 | Tiempo=250.3s
+      Fold Q2 | N=26675 | BestIter=1351 | RMSE= 5.952 | Tiempo=199.0s
+      Fold Q3 | N=27584 | BestIter=1997 | RMSE= 4.565 | Tiempo=252.5s
+      Fold Q4 | N=27287 | BestIter=2000 | RMSE= 4.291 | Tiempo=299.0s
+    Val OOF RMSE: 4.9165 (vs Fase 1 4.8663 -> +0.0502) | Pk RMSE:   9.62
+    Reentrenando 2198 ßrboles con 3 semillas...
+    Test 2025 RMSE: 4.8843 (vs Fase 1 4.8663 -> +0.0180) | R2: 0.9462 | Pk RMSE:   9.44
+    Predicciones guardadas en D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche2\refit\preds\refit_nwp_peak_w_h1.parquet
+
+  --- Ejecutando refit_nwp_resid_persist (h=1) ---
+      Fold Q1 | N=27002 | BestIter=1982 | RMSE= 4.648 | Tiempo=308.9s
+      Fold Q2 | N=26675 | BestIter= 895 | RMSE= 5.822 | Tiempo=229.1s
+      Fold Q3 | N=27584 | BestIter=1999 | RMSE= 4.523 | Tiempo=453.6s
+      Fold Q4 | N=27287 | BestIter=2000 | RMSE= 4.234 | Tiempo=60647.3s
+    Val OOF RMSE: 4.8383 (vs Fase 1 4.8663 -> -0.0280) | Pk RMSE:   9.64
+    Reentrenando 2190 ßrboles con 3 semillas...
+    Test 2025 RMSE: 4.8385 (vs Fase 1 4.8663 -> -0.0278) | R2: 0.9472 | Pk RMSE:   9.65
+    Predicciones guardadas en D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche2\refit\preds\refit_nwp_resid_persist_h1.parquet
+
+================================================================================
+  CARGANDO DATOS FASE 2 HORIZONTE h=8
+================================================================================
+  Referencia Fase 1 (refit_best) h= 8 -> Val OOF: 9.4568 | Test: 9.7368
+
+  --- Ejecutando refit_nwp_best (h=8) ---
+      Fold Q1 | N=27006 | BestIter=1449 | RMSE= 9.394 | Tiempo=325.5s
+      Fold Q2 | N=26677 | BestIter= 867 | RMSE=10.803 | Tiempo=230.4s
+      Fold Q3 | N=27571 | BestIter= 783 | RMSE= 8.572 | Tiempo=218.8s

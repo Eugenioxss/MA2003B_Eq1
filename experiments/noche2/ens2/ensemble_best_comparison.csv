@@ -1,0 +1,7 @@
+h,winner_method,best_individual,indiv_val_rmse,indiv_test_rmse,ens_val_rmse_oof,ens_test_rmse,gain_vs_indiv_test,ens_test_r2,ens_rmse_peaks,ens_bias_peaks,conf80_test_cov,conf80_test_width,dma8_test_rmse,dma8_exceed_f1
+1,M7_peak_tail_booster,deep2__deep_imput2_resid_refit,4.7154,4.7644,4.6665,4.7157,0.0487,0.9498,9.3414,-3.868,79.21,9.56,2.1,0.9217
+4,M8_grand_blend_oof,deep2__deep_imput2_resid_refit,8.3351,8.4548,8.1341,8.3688,0.086,0.842,19.639,-14.3217,79.59,17.82,6.97,0.7168
+8,M7_peak_tail_booster,deep2__deep_imput2_resid_refit,9.362,9.4133,9.0551,9.2275,0.1858,0.808,21.5669,-16.206,79.47,19.99,8.75,0.6283
+12,M8_grand_blend_oof,deep2__deep_imput2_resid_refit,9.5085,9.6037,9.2504,9.3539,0.2498,0.8028,21.6034,-16.1175,80.5,20.89,8.89,0.6221
+24,M7_peak_tail_booster,refit__refit_nwp_best,9.842,9.864,9.4421,9.44,0.4241,0.7993,20.6976,-14.7202,80.4,21.26,8.8,0.642
+48,M3_nnls_ridge_global,imput2__imput2_nwp_resid_refit,10.7348,10.7806,10.3768,10.3255,0.4552,0.7602,23.0857,-17.9669,81.44,23.86,10.32,0.5391

@@ -1,0 +1,55 @@
+h,method,val_RMSE_OOF,test_RMSE,test_MAE,test_R2,test_RMSE_peaks,test_bias_peaks,info
+1,M0_best_individual,4.8068,4.903,3.2951,0.9458,9.6652,-4.1813,deep2__lgbm_residual_honest
+1,M1_top_k_mean,4.7591,4.8292,3.2323,0.9474,9.6464,-4.2405,Top-5 mean
+1,M2_greedy_caruana,4.7597,4.8178,3.2188,0.9476,9.5632,-4.219,Caruana (6 models)
+1,M3_nnls_ridge_global,4.7573,4.822,3.2254,0.9475,9.6735,-4.5317,NNLS Ridge (lam=0.0)
+1,M4_nnls_by_regime,4.7446,4.8189,3.233,0.9476,9.6497,-4.4437,NNLS 4 Regimes
+1,M5_ridge_meta_context,4.7413,4.7889,3.2042,0.9483,9.2865,-3.4324,Ridge Context (alpha=200.0)
+1,M6_lgbm_stacking_oof,4.7954,4.8384,3.2431,0.9472,9.7187,-3.8294,LGBM Meta Stacking OOF
+1,M6_blend_hybrid,4.7412,4.814,3.229,0.9477,9.6223,-4.3515,"Hybrid Blend (linear=0.85, lgbm=0.15)"
+1,M7_peak_tail_booster,4.7366,4.8181,3.2303,0.9476,9.6251,-4.2629,"Peak Booster (tau_q=0.9, beta=0.5)"
+4,M0_best_individual,8.4718,8.656,6.1036,0.831,20.065,-14.5657,imput2__imput2_nwp_refit
+4,M1_top_k_mean,8.2842,8.6055,6.013,0.833,20.785,-15.9795,Top-7 mean
+4,M2_greedy_caruana,8.2395,8.4982,5.9133,0.8371,20.4402,-15.5963,Caruana (9 models)
+4,M3_nnls_ridge_global,8.2518,8.5536,5.9383,0.835,20.9572,-16.367,NNLS Ridge (lam=0.0)
+4,M4_nnls_by_regime,8.232,8.5552,5.9446,0.8349,20.9506,-16.3785,NNLS 4 Regimes
+4,M5_ridge_meta_context,8.2705,8.3727,5.8773,0.8419,19.1109,-13.589,Ridge Context (alpha=200.0)
+4,M6_lgbm_stacking_oof,8.4619,8.4891,5.9667,0.8374,19.5493,-13.6723,LGBM Meta Stacking OOF
+4,M6_blend_hybrid,8.2217,8.5188,5.9275,0.8363,20.6761,-15.9725,"Hybrid Blend (linear=0.85, lgbm=0.15)"
+4,M7_peak_tail_booster,8.2147,8.5161,5.9254,0.8364,20.5767,-15.8161,"Peak Booster (tau_q=0.85, beta=0.35)"
+8,M0_best_individual,9.4543,9.5923,6.7568,0.7925,20.7793,-13.7613,deep2__deep_nwp_refit_resnet
+8,M1_top_k_mean,9.1979,9.5071,6.715,0.7962,23.0451,-18.1999,Top-5 mean
+8,M2_greedy_caruana,9.1299,9.2847,6.5473,0.8056,21.8096,-16.6184,Caruana (10 models)
+8,M3_nnls_ridge_global,9.1502,9.369,6.5907,0.8021,22.7666,-18.0006,NNLS Ridge (lam=200.0)
+8,M4_nnls_by_regime,9.136,9.3885,6.6018,0.8012,22.7892,-18.0005,NNLS 4 Regimes
+8,M5_ridge_meta_context,9.2878,9.2115,6.5351,0.8087,20.862,-15.0389,Ridge Context (alpha=200.0)
+8,M6_lgbm_stacking_oof,9.5667,9.3943,6.6735,0.801,21.3269,-14.6543,LGBM Meta Stacking OOF
+8,M6_blend_hybrid,9.1339,9.3541,6.586,0.8027,22.4741,-17.4985,"Hybrid Blend (linear=0.85, lgbm=0.15)"
+8,M7_peak_tail_booster,9.1229,9.2579,6.5374,0.8067,21.35,-15.8482,"Peak Booster (tau_q=0.85, beta=0.35)"
+12,M0_best_individual,9.6596,9.8774,7.0292,0.7801,23.2291,-17.7481,refit__refit_best
+12,M1_top_k_mean,9.5436,9.8666,7.0072,0.7805,23.948,-19.0786,Top-10 mean
+12,M2_greedy_caruana,9.406,9.4174,6.6858,0.8001,22.0732,-16.878,Caruana (10 models)
+12,M3_nnls_ridge_global,9.4036,9.5449,6.7514,0.7946,23.302,-18.5827,NNLS Ridge (lam=200.0)
+12,M4_nnls_by_regime,9.4017,9.5986,6.7711,0.7923,23.5241,-18.8436,NNLS 4 Regimes
+12,M5_ridge_meta_context,9.5402,9.4919,6.7766,0.7969,21.5923,-15.9298,Ridge Context (alpha=200.0)
+12,M6_lgbm_stacking_oof,9.7753,9.5875,6.8449,0.7928,21.7691,-15.5369,LGBM Meta Stacking OOF
+12,M6_blend_hybrid,9.3869,9.5579,6.7517,0.7941,23.1792,-18.3476,"Hybrid Blend (linear=0.85, lgbm=0.15)"
+12,M7_peak_tail_booster,9.3667,9.4903,6.7238,0.797,22.1789,-16.7857,"Peak Booster (tau_q=0.88, beta=0.5)"
+24,M0_best_individual,9.842,9.864,7.0745,0.7809,22.1835,-16.4111,refit__refit_nwp_best
+24,M1_top_k_mean,9.7935,9.9106,7.1264,0.7788,22.6498,-17.403,Top-10 mean
+24,M2_greedy_caruana,9.6351,9.5895,6.8836,0.7929,22.0045,-16.8445,Caruana (10 models)
+24,M3_nnls_ridge_global,9.6178,9.6995,6.9055,0.7881,23.3905,-18.6936,NNLS Ridge (lam=200.0)
+24,M4_nnls_by_regime,9.6351,9.6868,6.9077,0.7887,23.1604,-18.3673,NNLS 4 Regimes
+24,M5_ridge_meta_context,9.954,9.6447,6.9282,0.7905,21.0157,-14.9654,Ridge Context (alpha=200.0)
+24,M6_lgbm_stacking_oof,10.0496,9.767,7.0236,0.7851,21.1004,-14.2389,LGBM Meta Stacking OOF
+24,M6_blend_hybrid,9.5998,9.662,6.8895,0.7897,22.9265,-18.0254,"Hybrid Blend (linear=0.85, lgbm=0.15)"
+24,M7_peak_tail_booster,9.5784,9.6356,6.8811,0.7909,22.3224,-17.1373,"Peak Booster (tau_q=0.85, beta=0.35)"
+48,M0_best_individual,10.9553,11.013,8.0179,0.7272,25.6191,-20.9203,refit__refit_best
+48,M1_top_k_mean,10.8527,10.8615,7.8825,0.7347,25.6872,-21.1933,Top-7 mean
+48,M2_greedy_caruana,10.7207,10.5197,7.639,0.7511,24.1807,-19.433,Caruana (10 models)
+48,M3_nnls_ridge_global,10.6909,10.5634,7.6387,0.749,24.768,-20.1728,NNLS Ridge (lam=200.0)
+48,M4_nnls_by_regime,10.6814,10.5776,7.6544,0.7484,24.8475,-20.3107,NNLS 4 Regimes
+48,M5_ridge_meta_context,11.1992,10.664,7.7635,0.7442,23.6053,-18.3597,Ridge Context (alpha=200.0)
+48,M6_lgbm_stacking_oof,11.8586,10.8591,7.9131,0.7348,23.3041,-17.3847,LGBM Meta Stacking OOF
+48,M6_blend_hybrid,10.6814,10.5776,7.6544,0.7484,24.8475,-20.3107,"Hybrid Blend (linear=1.0, lgbm=0.0)"
+48,M7_peak_tail_booster,10.6762,10.5584,7.6492,0.7493,24.4918,-19.852,"Peak Booster (tau_q=0.85, beta=0.15)"

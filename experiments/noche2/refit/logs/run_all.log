@@ -1,0 +1,217 @@
+﻿================================================================================
+FASE 1: CROSS-FITTING POR TRIMESTRES 2024 (HORIZONTES RESTANTES)
+================================================================================
+
+>>> HORIZONTE h=8
+  Referencia Base D_honest_noise h= 8 -> Val RMSE: 9.6229 | Test RMSE: 10.0536
+
+  --- Evaluando refit_base (h=8) ---
+      Base: 2020-2023 ruido calibrado sin Q + 2024 w=1.0
+    Iniciando 4-fold cross-fitting en 2024 (n_val=108555)...
+      Fold Q1 | N=27006 | BestIter=1983 | RMSE= 9.708 | Tiempo=262.8s
+      Fold Q2 | N=26677 | BestIter= 868 | RMSE=10.808 | Tiempo=155.8s
+      Fold Q3 | N=27571 | BestIter=1653 | RMSE= 8.528 | Tiempo=235.3s
+      Fold Q4 | N=27301 | BestIter=1838 | RMSE= 8.662 | Tiempo=260.8s
+  [RESULTADO] h= 8 | refit_base      | Val OOF: 9.4601 (vs D 9.6229 -> -0.1628, -1.69%) [MEJORA] | Pk RMSE:  21.07 | Time: 914.7s
+
+  --- Evaluando refit_isnwp (h=8) ---
+      Como base + feature is_nwp (0 en 2020-2023, 1 en 2024/25)
+    Iniciando 4-fold cross-fitting en 2024 (n_val=108555)...
+      Fold Q1 | N=27006 | BestIter=2000 | RMSE= 9.587 | Tiempo=262.5s
+      Fold Q2 | N=26677 | BestIter= 678 | RMSE=10.800 | Tiempo=134.5s
+      Fold Q3 | N=27571 | BestIter= 918 | RMSE= 8.561 | Tiempo=158.0s
+      Fold Q4 | N=27301 | BestIter=1250 | RMSE= 8.829 | Tiempo=189.2s
+  [RESULTADO] h= 8 | refit_isnwp     | Val OOF: 9.4739 (vs D 9.6229 -> -0.1490, -1.55%) [MEJORA] | Pk RMSE:  20.40 | Time: 744.2s
+
+  --- Evaluando refit_w2 (h=8) ---
+      Como base + peso extra x2 para filas 2024
+    Iniciando 4-fold cross-fitting en 2024 (n_val=108555)...
+      Fold Q1 | N=27006 | BestIter=1956 | RMSE= 9.677 | Tiempo=267.2s
+      Fold Q2 | N=26677 | BestIter=1561 | RMSE=10.799 | Tiempo=228.6s
+      Fold Q3 | N=27571 | BestIter=1157 | RMSE= 8.560 | Tiempo=186.7s
+      Fold Q4 | N=27301 | BestIter=1432 | RMSE= 8.661 | Tiempo=216.7s
+  [RESULTADO] h= 8 | refit_w2        | Val OOF: 9.4568 (vs D 9.6229 -> -0.1661, -1.73%) [MEJORA] | Pk RMSE:  21.05 | Time: 899.2s
+
+  --- Evaluando refit_peak_w (h=8) ---
+      Como base + pesos picos w=1+(y/p90)^2
+    Iniciando 4-fold cross-fitting en 2024 (n_val=108555)...
+      Fold Q1 | N=27006 | BestIter=1261 | RMSE= 9.657 | Tiempo=198.6s
+      Fold Q2 | N=26677 | BestIter= 866 | RMSE=10.827 | Tiempo=149.1s
+      Fold Q3 | N=27571 | BestIter=1270 | RMSE= 8.548 | Tiempo=194.4s
+      Fold Q4 | N=27301 | BestIter=1999 | RMSE= 8.856 | Tiempo=264.4s
+  [RESULTADO] h= 8 | refit_peak_w    | Val OOF: 9.5022 (vs D 9.6229 -> -0.1206, -1.25%) [MEJORA] | Pk RMSE:  19.77 | Time: 806.4s
+
+>>> HORIZONTE h=12
+  Referencia Base D_honest_noise h=12 -> Val RMSE: 9.8358 | Test RMSE: 10.1832
+
+  --- Evaluando refit_base (h=12) ---
+      Base: 2020-2023 ruido calibrado sin Q + 2024 w=1.0
+    Iniciando 4-fold cross-fitting en 2024 (n_val=108560)...
+      Fold Q1 | N=27010 | BestIter=1824 | RMSE= 9.920 | Tiempo=255.8s
+      Fold Q2 | N=26676 | BestIter= 739 | RMSE=10.921 | Tiempo=128.2s
+      Fold Q3 | N=27565 | BestIter=1123 | RMSE= 8.649 | Tiempo=167.5s
+      Fold Q4 | N=27309 | BestIter=1296 | RMSE= 9.082 | Tiempo=184.6s
+  [RESULTADO] h=12 | refit_base      | Val OOF: 9.6713 (vs D 9.8358 -> -0.1645, -1.67%) [MEJORA] | Pk RMSE:  21.29 | Time: 736.0s
+
+  --- Evaluando refit_isnwp (h=12) ---
+      Como base + feature is_nwp (0 en 2020-2023, 1 en 2024/25)
+    Iniciando 4-fold cross-fitting en 2024 (n_val=108560)...
+      Fold Q1 | N=27010 | BestIter=1614 | RMSE= 9.812 | Tiempo=12445.5s
+      Fold Q2 | N=26676 | BestIter= 853 | RMSE=10.889 | Tiempo=84.7s
+      Fold Q3 | N=27565 | BestIter= 966 | RMSE= 8.624 | Tiempo=402.5s
+      Fold Q4 | N=27309 | BestIter=1003 | RMSE= 9.209 | Tiempo=104.4s
+  [RESULTADO] h=12 | refit_isnwp     | Val OOF: 9.6596 (vs D 9.8358 -> -0.1762, -1.79%) [MEJORA] | Pk RMSE:  20.72 | Time: 13037.2s
+
+  --- Evaluando refit_w2 (h=12) ---
+      Como base + peso extra x2 para filas 2024
+    Iniciando 4-fold cross-fitting en 2024 (n_val=108560)...
+      Fold Q1 | N=27010 | BestIter=1798 | RMSE= 9.931 | Tiempo=280.5s
+      Fold Q2 | N=26676 | BestIter=1246 | RMSE=10.955 | Tiempo=150.5s
+      Fold Q3 | N=27565 | BestIter= 923 | RMSE= 8.655 | Tiempo=122.9s
+      Fold Q4 | N=27309 | BestIter=1177 | RMSE= 9.049 | Tiempo=145.3s
+  [RESULTADO] h=12 | refit_w2        | Val OOF: 9.6771 (vs D 9.8358 -> -0.1587, -1.61%) [MEJORA] | Pk RMSE:  21.41 | Time: 699.1s
+
+  --- Evaluando refit_peak_w (h=12) ---
+      Como base + pesos picos w=1+(y/p90)^2
+    Iniciando 4-fold cross-fitting en 2024 (n_val=108560)...
+      Fold Q1 | N=27010 | BestIter= 930 | RMSE= 9.816 | Tiempo=119.3s
+      Fold Q2 | N=26676 | BestIter= 907 | RMSE=10.936 | Tiempo=120.2s
+      Fold Q3 | N=27565 | BestIter=1208 | RMSE= 8.660 | Tiempo=146.6s
+      Fold Q4 | N=27309 | BestIter=1991 | RMSE= 9.250 | Tiempo=203.7s
+  [RESULTADO] h=12 | refit_peak_w    | Val OOF: 9.6916 (vs D 9.8358 -> -0.1442, -1.47%) [MEJORA] | Pk RMSE:  20.00 | Time: 589.8s
+
+>>> HORIZONTE h=1
+  Referencia Base D_honest_noise h= 1 -> Val RMSE: 4.9370 | Test RMSE: 5.0048
+
+  --- Evaluando refit_base (h=1) ---
+      Base: 2020-2023 ruido calibrado sin Q + 2024 w=1.0
+    Iniciando 4-fold cross-fitting en 2024 (n_val=108548)...
+      Fold Q1 | N=27002 | BestIter=1914 | RMSE= 4.648 | Tiempo=194.1s
+      Fold Q2 | N=26675 | BestIter=1018 | RMSE= 5.906 | Tiempo=125.1s
+      Fold Q3 | N=27584 | BestIter=1999 | RMSE= 4.524 | Tiempo=1145.3s
+      Fold Q4 | N=27287 | BestIter=2000 | RMSE= 4.247 | Tiempo=173.0s
+  [RESULTADO] h= 1 | refit_base      | Val OOF: 4.8663 (vs D 4.9370 -> -0.0707, -1.43%) [MEJORA] | Pk RMSE:   9.95 | Time: 1637.4s
+
+  --- Evaluando refit_isnwp (h=1) ---
+      Como base + feature is_nwp (0 en 2020-2023, 1 en 2024/25)
+    Iniciando 4-fold cross-fitting en 2024 (n_val=108548)...
+      Fold Q1 | N=27002 | BestIter=1994 | RMSE= 4.663 | Tiempo=192.3s
+      Fold Q2 | N=26675 | BestIter=1012 | RMSE= 5.902 | Tiempo=124.8s
+      Fold Q3 | N=27584 | BestIter=1999 | RMSE= 4.523 | Tiempo=193.1s
+      Fold Q4 | N=27287 | BestIter=2000 | RMSE= 4.242 | Tiempo=193.6s
+  [RESULTADO] h= 1 | refit_isnwp     | Val OOF: 4.8672 (vs D 4.9370 -> -0.0698, -1.41%) [MEJORA] | Pk RMSE:   9.93 | Time: 703.9s
+
+  --- Evaluando refit_w2 (h=1) ---
+      Como base + peso extra x2 para filas 2024
+    Iniciando 4-fold cross-fitting en 2024 (n_val=108548)...
+      Fold Q1 | N=27002 | BestIter=1990 | RMSE= 4.663 | Tiempo=193.4s
+      Fold Q2 | N=26675 | BestIter= 862 | RMSE= 5.921 | Tiempo=1157.4s
+      Fold Q3 | N=27584 | BestIter=1998 | RMSE= 4.516 | Tiempo=1916.7s
+      Fold Q4 | N=27287 | BestIter=1998 | RMSE= 4.251 | Tiempo=252747.9s
+  [RESULTADO] h= 1 | refit_w2        | Val OOF: 4.8733 (vs D 4.9370 -> -0.0637, -1.29%) [MEJORA] | Pk RMSE:  10.03 | Time: 256015.4s
+
+  --- Evaluando refit_peak_w (h=1) ---
+      Como base + pesos picos w=1+(y/p90)^2
+    Iniciando 4-fold cross-fitting en 2024 (n_val=108548)...
+      Fold Q1 | N=27002 | BestIter=1999 | RMSE= 4.710 | Tiempo=195.1s
+      Fold Q2 | N=26675 | BestIter=1160 | RMSE= 5.958 | Tiempo=241.3s
+      Fold Q3 | N=27584 | BestIter=2000 | RMSE= 4.571 | Tiempo=205.3s
+      Fold Q4 | N=27287 | BestIter=1999 | RMSE= 4.283 | Tiempo=197.1s
+  [RESULTADO] h= 1 | refit_peak_w    | Val OOF: 4.9157 (vs D 4.9370 -> -0.0213, -0.43%) [MEJORA] | Pk RMSE:   9.72 | Time: 838.7s
+
+>>> HORIZONTE h=48
+  Referencia Base D_honest_noise h=48 -> Val RMSE: 11.1158 | Test RMSE: 11.2337
+
+  --- Evaluando refit_base (h=48) ---
+      Base: 2020-2023 ruido calibrado sin Q + 2024 w=1.0
+    Iniciando 4-fold cross-fitting en 2024 (n_val=108563)...
+      Fold Q1 | N=27019 | BestIter= 336 | RMSE=11.403 | Tiempo=68.3s
+      Fold Q2 | N=26639 | BestIter= 233 | RMSE=12.617 | Tiempo=53.3s
+      Fold Q3 | N=27525 | BestIter= 753 | RMSE= 9.774 | Tiempo=108.2s
+      Fold Q4 | N=27380 | BestIter= 836 | RMSE= 9.935 | Tiempo=126.9s
+  [RESULTADO] h=48 | refit_base      | Val OOF: 10.9791 (vs D 11.1158 -> -0.1368, -1.23%) [MEJORA] | Pk RMSE:  23.63 | Time: 356.7s
+
+  --- Evaluando refit_isnwp (h=48) ---
+      Como base + feature is_nwp (0 en 2020-2023, 1 en 2024/25)
+    Iniciando 4-fold cross-fitting en 2024 (n_val=108563)...
+      Fold Q1 | N=27019 | BestIter= 311 | RMSE=11.265 | Tiempo=82.4s
+      Fold Q2 | N=26639 | BestIter= 140 | RMSE=12.637 | Tiempo=53.3s
+      Fold Q3 | N=27525 | BestIter= 777 | RMSE= 9.707 | Tiempo=146.2s
+      Fold Q4 | N=27380 | BestIter= 188 | RMSE=10.028 | Tiempo=61.7s
+  [RESULTADO] h=48 | refit_isnwp     | Val OOF: 10.9553 (vs D 11.1158 -> -0.1605, -1.44%) [MEJORA] | Pk RMSE:  24.12 | Time: 343.6s
+
+  --- Evaluando refit_w2 (h=48) ---
+      Como base + peso extra x2 para filas 2024
+    Iniciando 4-fold cross-fitting en 2024 (n_val=108563)...
+      Fold Q1 | N=27019 | BestIter= 329 | RMSE=11.372 | Tiempo=88.3s
+      Fold Q2 | N=26639 | BestIter= 199 | RMSE=12.607 | Tiempo=66.4s
+      Fold Q3 | N=27525 | BestIter= 805 | RMSE= 9.756 | Tiempo=155.6s
+      Fold Q4 | N=27380 | BestIter= 792 | RMSE= 9.901 | Tiempo=156.4s
+  [RESULTADO] h=48 | refit_w2        | Val OOF: 10.9565 (vs D 11.1158 -> -0.1593, -1.43%) [MEJORA] | Pk RMSE:  23.68 | Time: 466.7s
+
+  --- Evaluando refit_peak_w (h=48) ---
+      Como base + pesos picos w=1+(y/p90)^2
+    Iniciando 4-fold cross-fitting en 2024 (n_val=108563)...
+      Fold Q1 | N=27019 | BestIter= 452 | RMSE=11.056 | Tiempo=105.3s
+      Fold Q2 | N=26639 | BestIter=  82 | RMSE=13.089 | Tiempo=40.7s
+      Fold Q3 | N=27525 | BestIter= 976 | RMSE= 9.758 | Tiempo=174.5s
+      Fold Q4 | N=27380 | BestIter= 998 | RMSE=10.139 | Tiempo=178.0s
+  [RESULTADO] h=48 | refit_peak_w    | Val OOF: 11.0694 (vs D 11.1158 -> -0.0464, -0.42%) [MEJORA] | Pk RMSE:  22.69 | Time: 498.5s
+
+================================================================================
+FASE 2: SELECCION DE GANADORES POR HORIZONTE (SOLO VAL OOF)
+================================================================================
+  h= 1 -> Ganador: refit_base      | Val OOF RMSE: 4.8663 (Mejora vs D: -0.0707) | iters=[1914, 1018, 1999, 2000]
+  h= 4 -> Ganador: refit_w2        | Val OOF RMSE: 8.5034 (Mejora vs D: -0.1322) | iters=[1991, 1055, 1698, 1998]
+  h= 8 -> Ganador: refit_w2        | Val OOF RMSE: 9.4567 (Mejora vs D: -0.1661) | iters=[1956, 1561, 1157, 1432]
+  h=12 -> Ganador: refit_isnwp     | Val OOF RMSE: 9.6596 (Mejora vs D: -0.1762) | iters=[1614, 853, 966, 1003]
+  h=24 -> Ganador: refit_isnwp     | Val OOF RMSE: 9.8949 (Mejora vs D: -0.1313) | iters=[780, 590, 1069, 626]
+  h=48 -> Ganador: refit_isnwp     | Val OOF RMSE: 10.9553 (Mejora vs D: -0.1605) | iters=[311, 140, 777, 188]
+
+================================================================================
+FASE 3: REFIT COMPLETO (2020-2024) Y EVALUACION TEST 2025 CON BAGGING
+================================================================================
+
+>>> REFIT h= 1 | Variante: refit_base | Trees: 2152
+  Entrenando seed 42 (2152 arboles)...
+    Reentrenando refit completo 2020-2024 con 2152 ßrboles (mediana=1956 * 1.1)...
+    [Seed 42] Test RMSE: 4.8900 | R2: 0.9460 | Pk RMSE:   9.92
+  Entrenando seed 43 (2152 arboles)...
+    Reentrenando refit completo 2020-2024 con 2152 ßrboles (mediana=1956 * 1.1)...
+  Entrenando seed 44 (2152 arboles)...
+    Reentrenando refit completo 2020-2024 con 2152 ßrboles (mediana=1956 * 1.1)...
+    [Bagging 3-seeds] Test RMSE: 4.8663 | R2: 0.9466 | Pk RMSE:   9.85 | Ganancia bagging: +0.0237
+
+>>> REFIT h= 4 | Variante: refit_w2 | Trees: 2029
+  Entrenando seed 42 (2029 arboles)...
+    Reentrenando refit completo 2020-2024 con 2029 ßrboles (mediana=1844 * 1.1)...
+    [Seed 42] Test RMSE: 8.7787 | R2: 0.8262 | Pk RMSE:  20.77
+  Entrenando seed 43 (2029 arboles)...
+    Reentrenando refit completo 2020-2024 con 2029 ßrboles (mediana=1844 * 1.1)...
+  Entrenando seed 44 (2029 arboles)...
+    Reentrenando refit completo 2020-2024 con 2029 ßrboles (mediana=1844 * 1.1)...
+    [Bagging 3-seeds] Test RMSE: 8.7481 | R2: 0.8274 | Pk RMSE:  20.78 | Ganancia bagging: +0.0306
+
+>>> REFIT h= 8 | Variante: refit_w2 | Trees: 1646
+  Entrenando seed 42 (1646 arboles)...
+    Reentrenando refit completo 2020-2024 con 1646 ßrboles (mediana=1496 * 1.1)...
+    [Seed 42] Test RMSE: 9.7698 | R2: 0.7848 | Pk RMSE:  23.80
+  Entrenando seed 43 (1646 arboles)...
+    Reentrenando refit completo 2020-2024 con 1646 ßrboles (mediana=1496 * 1.1)...
+  Entrenando seed 44 (1646 arboles)...
+    Reentrenando refit completo 2020-2024 con 1646 ßrboles (mediana=1496 * 1.1)...
+    [Bagging 3-seeds] Test RMSE: 9.7368 | R2: 0.7862 | Pk RMSE:  23.82 | Ganancia bagging: +0.0331
+
+>>> REFIT h=12 | Variante: refit_isnwp | Trees: 1083
+  Entrenando seed 42 (1083 arboles)...
+    Reentrenando refit completo 2020-2024 con 1083 ßrboles (mediana=984 * 1.1)...
+    [Seed 42] Test RMSE: 9.9182 | R2: 0.7782 | Pk RMSE:  23.29
+  Entrenando seed 43 (1083 arboles)...
+    Reentrenando refit completo 2020-2024 con 1083 ßrboles (mediana=984 * 1.1)...
+  Entrenando seed 44 (1083 arboles)...
+    Reentrenando refit completo 2020-2024 con 1083 ßrboles (mediana=984 * 1.1)...
+    [Bagging 3-seeds] Test RMSE: 9.8774 | R2: 0.7801 | Pk RMSE:  23.23 | Ganancia bagging: +0.0408
+
+>>> REFIT h=24 | Variante: refit_isnwp | Trees: 773
+  Entrenando seed 42 (773 arboles)...
+    Reentrenando refit completo 2020-2024 con 773 ßrboles (mediana=703 * 1.1)...

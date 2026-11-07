@@ -1,0 +1,177 @@
+[2026-10-30 02:05:16] =================================================================
+[2026-10-30 02:05:16] STARTING EXPERIMENT: noche_deep (Multi-Horizon Deep Learning O3)
+[2026-10-30 02:05:16] Device: cuda (NVIDIA GeForce RTX 3060 Laptop GPU)
+[2026-10-30 02:05:16] =================================================================
+[2026-10-30 02:05:17] Panel split: train=455832, val=114192, test=113880
+[2026-10-30 02:05:19] 
+>>> TRAINING MODEL 1: TiDE-MLP (MSE Loss) with Honest Protocol and Noise Injection
+[2026-10-30 02:07:43] Epoch  1/12 | Train RMSE:  8.60 | Val RMSE (avg 6h): 10.182 (h1:6.91, h4:10.07, h24:10.78, h48:12.13) | Time: 138.1s
+[2026-10-30 02:07:43]   [*] Best model saved (val RMSE = 10.1818)
+[2026-10-30 02:09:57] Epoch  2/12 | Train RMSE:  7.06 | Val RMSE (avg 6h): 10.225 (h1:7.00, h4:10.05, h24:10.81, h48:12.25) | Time: 133.5s
+[2026-10-30 02:12:14] Epoch  3/12 | Train RMSE:  6.38 | Val RMSE (avg 6h): 10.169 (h1:6.84, h4:10.07, h24:10.85, h48:12.22) | Time: 137.6s
+[2026-10-30 02:12:14]   [*] Best model saved (val RMSE = 10.1691)
+[2026-10-30 02:14:30] Epoch  4/12 | Train RMSE:  5.95 | Val RMSE (avg 6h): 10.291 (h1:6.99, h4:10.14, h24:10.96, h48:12.25) | Time: 135.9s
+[2026-10-30 02:16:45] Epoch  5/12 | Train RMSE:  5.63 | Val RMSE (avg 6h): 10.225 (h1:6.80, h4:10.25, h24:10.89, h48:12.10) | Time: 135.1s
+[2026-10-30 02:19:00] Epoch  6/12 | Train RMSE:  5.39 | Val RMSE (avg 6h): 10.266 (h1:6.97, h4:10.18, h24:10.86, h48:12.11) | Time: 134.6s
+[2026-10-30 02:21:16] Epoch  7/12 | Train RMSE:  5.21 | Val RMSE (avg 6h): 10.284 (h1:6.98, h4:10.19, h24:10.92, h48:12.15) | Time: 136.1s
+[2026-10-30 02:23:32] Epoch  8/12 | Train RMSE:  5.06 | Val RMSE (avg 6h): 10.316 (h1:7.04, h4:10.28, h24:11.00, h48:11.99) | Time: 136.4s
+[2026-10-30 02:25:41] Epoch  9/12 | Train RMSE:  4.95 | Val RMSE (avg 6h): 10.382 (h1:7.11, h4:10.42, h24:10.99, h48:12.05) | Time: 128.8s
+[2026-10-30 02:27:56] Epoch 10/12 | Train RMSE:  4.86 | Val RMSE (avg 6h): 10.384 (h1:7.08, h4:10.41, h24:11.03, h48:12.04) | Time: 135.0s
+[2026-10-30 02:30:14] Epoch 11/12 | Train RMSE:  4.79 | Val RMSE (avg 6h): 10.370 (h1:7.07, h4:10.38, h24:11.00, h48:12.06) | Time: 138.1s
+[2026-10-30 02:32:29] Epoch 12/12 | Train RMSE:  4.76 | Val RMSE (avg 6h): 10.383 (h1:7.07, h4:10.39, h24:11.02, h48:12.04) | Time: 135.1s
+[2026-10-30 02:32:29] Loaded best TiDE MSE checkpoint with Val RMSE: 10.1691
+[2026-10-30 02:34:05] 
+=======================================================
+[2026-10-30 02:34:05] Evaluating and Logging Variant: tide_honest
+[2026-10-30 02:34:05] Notes: TiDE-MLP honest (day1 1-24h, day2 25-48h, train NWP noise, spatial lag0)
+[2026-10-30 02:34:05] =======================================================
+[2026-10-30 02:34:06] h= 1 | RMSE:  6.941 | R2: 0.8913 | RMSE_peaks:  16.44 | bias_peaks: -12.43 | skill: 0.5335
+[2026-10-30 02:34:06]   Saved D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\deep\preds\tide_honest_h1.parquet (val=108548, test=108512)
+[2026-10-30 02:34:06] h= 4 | RMSE: 10.134 | R2: 0.7683 | RMSE_peaks:  25.12 | bias_peaks: -19.33 | skill: 0.3189
+[2026-10-30 02:34:07]   Saved D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\deep\preds\tide_honest_h4.parquet (val=108551, test=108473)
+[2026-10-30 02:34:07] h= 8 | RMSE: 10.627 | R2: 0.7454 | RMSE_peaks:  26.14 | bias_peaks: -20.80 | skill: 0.2859
+[2026-10-30 02:34:07]   Saved D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\deep\preds\tide_honest_h8.parquet (val=108555, test=108421)
+[2026-10-30 02:34:07] h=12 | RMSE: 10.568 | R2: 0.7482 | RMSE_peaks:  25.00 | bias_peaks: -19.38 | skill: 0.2899
+[2026-10-30 02:34:08]   Saved D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\deep\preds\tide_honest_h12.parquet (val=108560, test=108369)
+[2026-10-30 02:34:08] h=24 | RMSE: 10.650 | R2: 0.7445 | RMSE_peaks:  23.34 | bias_peaks: -16.06 | skill: 0.2846
+[2026-10-30 02:34:08]   Saved D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\deep\preds\tide_honest_h24.parquet (val=108561, test=108213)
+[2026-10-30 02:34:08] h=48 | RMSE: 11.697 | R2: 0.6923 | RMSE_peaks:  23.28 | bias_peaks: -15.16 | skill: 0.2150
+[2026-10-30 02:34:09]   Saved D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\deep\preds\tide_honest_h48.parquet (val=108563, test=107909)
+[2026-10-30 02:35:30] 
+=======================================================
+[2026-10-30 02:35:30] Evaluating and Logging Variant: tide_pp
+[2026-10-30 02:35:30] Notes: TiDE-MLP PP (seamless Open-Meteo in test, upper bound non-operational)
+[2026-10-30 02:35:30] =======================================================
+[2026-10-30 02:35:31] h= 1 | RMSE:  6.597 | R2: 0.9018 | RMSE_peaks:  14.55 | bias_peaks:  -9.98 | skill: 0.5566
+[2026-10-30 02:35:31]   Saved D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\deep\preds\tide_pp_h1.parquet (val=108548, test=108512)
+[2026-10-30 02:35:31] h= 4 | RMSE:  9.410 | R2: 0.8002 | RMSE_peaks:  20.65 | bias_peaks: -13.77 | skill: 0.3675
+[2026-10-30 02:35:31]   Saved D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\deep\preds\tide_pp_h4.parquet (val=108551, test=108473)
+[2026-10-30 02:35:31] h= 8 | RMSE:  9.947 | R2: 0.7769 | RMSE_peaks:  22.10 | bias_peaks: -15.75 | skill: 0.3316
+[2026-10-30 02:35:32]   Saved D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\deep\preds\tide_pp_h8.parquet (val=108555, test=108421)
+[2026-10-30 02:35:32] h=12 | RMSE:  9.878 | R2: 0.7801 | RMSE_peaks:  20.99 | bias_peaks: -14.28 | skill: 0.3363
+[2026-10-30 02:35:32]   Saved D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\deep\preds\tide_pp_h12.parquet (val=108560, test=108369)
+[2026-10-30 02:35:32] h=24 | RMSE: 10.153 | R2: 0.7678 | RMSE_peaks:  20.81 | bias_peaks: -13.00 | skill: 0.3180
+[2026-10-30 02:35:32]   Saved D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\deep\preds\tide_pp_h24.parquet (val=108561, test=108213)
+[2026-10-30 02:35:32] h=48 | RMSE: 10.545 | R2: 0.7499 | RMSE_peaks:  21.53 | bias_peaks: -13.58 | skill: 0.2923
+[2026-10-30 02:35:33]   Saved D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\deep\preds\tide_pp_h48.parquet (val=108563, test=107909)
+[2026-10-30 02:35:33] 
+>>> TRAINING MODEL 2: TiDE-MLP (Pinball Quantile Loss: q10, q50, q90)
+[2026-10-30 02:37:53] Epoch  1/12 | Train Pinball: 5.855 | Val RMSE q50: 10.061 (h1:6.69, h4:10.02, h24:10.77, h48:11.90) | Time: 140.7s
+[2026-10-30 02:37:54]   [*] Best quantile model saved (val RMSE = 10.0609)
+[2026-10-30 02:40:19] Epoch  2/12 | Train Pinball: 4.781 | Val RMSE q50: 10.098 (h1:6.59, h4:9.92, h24:10.90, h48:12.11) | Time: 145.3s
+[2026-10-30 02:42:42] Epoch  3/12 | Train Pinball: 4.305 | Val RMSE q50: 10.171 (h1:6.75, h4:10.04, h24:10.99, h48:11.97) | Time: 143.2s
+[2026-10-30 02:45:01] Epoch  4/12 | Train Pinball: 4.012 | Val RMSE q50: 10.163 (h1:6.67, h4:9.98, h24:10.92, h48:11.95) | Time: 138.6s
+[2026-10-30 02:47:16] Epoch  5/12 | Train Pinball: 3.802 | Val RMSE q50: 10.270 (h1:6.80, h4:10.12, h24:11.07, h48:12.06) | Time: 135.3s
+[2026-10-30 02:49:29] Epoch  6/12 | Train Pinball: 3.648 | Val RMSE q50: 10.350 (h1:6.71, h4:10.26, h24:11.13, h48:12.04) | Time: 132.8s
+[2026-10-30 02:51:42] Epoch  7/12 | Train Pinball: 3.521 | Val RMSE q50: 10.327 (h1:6.78, h4:10.33, h24:11.13, h48:11.90) | Time: 133.9s
+[2026-10-30 02:53:58] Epoch  8/12 | Train Pinball: 3.423 | Val RMSE q50: 10.318 (h1:6.84, h4:10.18, h24:11.16, h48:12.04) | Time: 135.2s
+[2026-10-30 02:56:09] Epoch  9/12 | Train Pinball: 3.343 | Val RMSE q50: 10.357 (h1:6.88, h4:10.30, h24:11.12, h48:12.08) | Time: 131.0s
+[2026-10-30 02:58:25] Epoch 10/12 | Train Pinball: 3.284 | Val RMSE q50: 10.385 (h1:6.83, h4:10.35, h24:11.15, h48:12.10) | Time: 136.8s
+[2026-10-30 03:00:40] Epoch 11/12 | Train Pinball: 3.243 | Val RMSE q50: 10.402 (h1:6.90, h4:10.35, h24:11.18, h48:12.10) | Time: 134.4s
+[2026-10-30 03:02:56] Epoch 12/12 | Train Pinball: 3.220 | Val RMSE q50: 10.394 (h1:6.89, h4:10.36, h24:11.17, h48:12.10) | Time: 136.3s
+[2026-10-30 03:02:56] Loaded best TiDE Quantile checkpoint with Val RMSE: 10.0609
+[2026-10-30 03:04:34] 
+=======================================================
+[2026-10-30 03:04:34] Evaluating and Logging Variant: tide_quantile_honest
+[2026-10-30 03:04:34] Notes: TiDE-MLP pinball loss (q10/q50/q90), honest NWP meteo
+[2026-10-30 03:04:34] =======================================================
+[2026-10-30 03:04:35] h= 1 | RMSE:  6.833 | R2: 0.8946 | RMSE_peaks:  15.21 | bias_peaks: -10.79 | skill: 0.5408
+[2026-10-30 03:04:35]   Saved D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\deep\preds\tide_quantile_honest_h1.parquet (val=108548, test=108512)
+[2026-10-30 03:04:35] h= 4 | RMSE: 10.374 | R2: 0.7572 | RMSE_peaks:  27.15 | bias_peaks: -22.82 | skill: 0.3028
+[2026-10-30 03:04:35]   Saved D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\deep\preds\tide_quantile_honest_h4.parquet (val=108551, test=108473)
+[2026-10-30 03:04:36] h= 8 | RMSE: 10.562 | R2: 0.7485 | RMSE_peaks:  26.25 | bias_peaks: -21.45 | skill: 0.2902
+[2026-10-30 03:04:36]   Saved D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\deep\preds\tide_quantile_honest_h8.parquet (val=108555, test=108421)
+[2026-10-30 03:04:36] h=12 | RMSE: 10.731 | R2: 0.7404 | RMSE_peaks:  27.02 | bias_peaks: -22.20 | skill: 0.2790
+[2026-10-30 03:04:36]   Saved D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\deep\preds\tide_quantile_honest_h12.parquet (val=108560, test=108369)
+[2026-10-30 03:04:37] h=24 | RMSE: 10.752 | R2: 0.7396 | RMSE_peaks:  25.69 | bias_peaks: -20.56 | skill: 0.2777
+[2026-10-30 03:04:37]   Saved D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\deep\preds\tide_quantile_honest_h24.parquet (val=108561, test=108213)
+[2026-10-30 03:04:37] h=48 | RMSE: 11.633 | R2: 0.6956 | RMSE_peaks:  26.43 | bias_peaks: -20.83 | skill: 0.2193
+[2026-10-30 03:04:37]   Saved D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\deep\preds\tide_quantile_honest_h48.parquet (val=108563, test=107909)
+[2026-10-30 03:05:59] 
+=======================================================
+[2026-10-30 03:05:59] Evaluating and Logging Variant: tide_quantile_pp
+[2026-10-30 03:05:59] Notes: TiDE-MLP pinball loss (q10/q50/q90), PP seamless meteo in test
+[2026-10-30 03:05:59] =======================================================
+[2026-10-30 03:05:59] h= 1 | RMSE:  6.622 | R2: 0.9010 | RMSE_peaks:  14.36 | bias_peaks:  -9.76 | skill: 0.5549
+[2026-10-30 03:05:59]   Saved D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\deep\preds\tide_quantile_pp_h1.parquet (val=108548, test=108512)
+[2026-10-30 03:06:00] h= 4 | RMSE:  9.657 | R2: 0.7897 | RMSE_peaks:  23.86 | bias_peaks: -19.12 | skill: 0.3510
+[2026-10-30 03:06:00]   Saved D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\deep\preds\tide_quantile_pp_h4.parquet (val=108551, test=108473)
+[2026-10-30 03:06:00] h= 8 | RMSE:  9.896 | R2: 0.7792 | RMSE_peaks:  23.36 | bias_peaks: -18.15 | skill: 0.3350
+[2026-10-30 03:06:00]   Saved D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\deep\preds\tide_quantile_pp_h8.parquet (val=108555, test=108421)
+[2026-10-30 03:06:01] h=12 | RMSE: 10.037 | R2: 0.7729 | RMSE_peaks:  23.83 | bias_peaks: -18.35 | skill: 0.3256
+[2026-10-30 03:06:01]   Saved D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\deep\preds\tide_quantile_pp_h12.parquet (val=108560, test=108369)
+[2026-10-30 03:06:01] h=24 | RMSE: 10.124 | R2: 0.7692 | RMSE_peaks:  23.41 | bias_peaks: -18.04 | skill: 0.3200
+[2026-10-30 03:06:01]   Saved D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\deep\preds\tide_quantile_pp_h24.parquet (val=108561, test=108213)
+[2026-10-30 03:06:02] h=48 | RMSE: 10.708 | R2: 0.7421 | RMSE_peaks:  24.74 | bias_peaks: -19.08 | skill: 0.2814
+[2026-10-30 03:06:02]   Saved D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\deep\preds\tide_quantile_pp_h48.parquet (val=108563, test=107909)
+[2026-10-30 03:06:02] 
+>>> TRAINING MODEL 3: GRU-TiDE (Recurrent Encoder + Multi-Horizon Decoder)
+[2026-10-30 03:08:24] Epoch  1/10 | Train RMSE:  8.74 | Val RMSE (avg 6h): 10.155 (h1:7.24, h4:10.01, h24:10.71, h48:12.11) | Time: 141.8s
+[2026-10-30 03:08:24]   [*] Best GRU model saved (val RMSE = 10.1554)
+[2026-10-30 03:10:46] Epoch  2/10 | Train RMSE:  7.31 | Val RMSE (avg 6h): 10.391 (h1:7.20, h4:10.40, h24:10.95, h48:12.45) | Time: 142.1s
+[2026-10-30 03:13:04] Epoch  3/10 | Train RMSE:  6.73 | Val RMSE (avg 6h): 10.506 (h1:7.03, h4:10.36, h24:11.28, h48:12.60) | Time: 137.8s
+[2026-10-30 03:15:22] Epoch  4/10 | Train RMSE:  6.36 | Val RMSE (avg 6h): 10.626 (h1:7.11, h4:10.65, h24:11.47, h48:12.47) | Time: 138.6s
+[2026-10-30 03:17:42] Epoch  5/10 | Train RMSE:  6.09 | Val RMSE (avg 6h): 10.620 (h1:7.09, h4:10.70, h24:11.46, h48:12.37) | Time: 139.3s
+[2026-10-30 03:20:03] Epoch  6/10 | Train RMSE:  5.88 | Val RMSE (avg 6h): 10.650 (h1:7.06, h4:10.51, h24:11.53, h48:12.52) | Time: 141.3s
+[2026-10-30 03:22:21] Epoch  7/10 | Train RMSE:  5.73 | Val RMSE (avg 6h): 10.711 (h1:7.15, h4:10.64, h24:11.55, h48:12.67) | Time: 138.1s
+[2026-10-30 03:24:40] Epoch  8/10 | Train RMSE:  5.60 | Val RMSE (avg 6h): 10.721 (h1:7.21, h4:10.63, h24:11.66, h48:12.58) | Time: 139.1s
+[2026-10-30 03:27:02] Epoch  9/10 | Train RMSE:  5.52 | Val RMSE (avg 6h): 10.739 (h1:7.16, h4:10.70, h24:11.64, h48:12.58) | Time: 142.1s
+[2026-10-30 03:29:24] Epoch 10/10 | Train RMSE:  5.47 | Val RMSE (avg 6h): 10.756 (h1:7.18, h4:10.71, h24:11.67, h48:12.58) | Time: 142.2s
+[2026-10-30 03:29:25] Loaded best GRU checkpoint with Val RMSE: 10.1554
+[2026-10-30 03:31:08] 
+=======================================================
+[2026-10-30 03:31:08] Evaluating and Logging Variant: gru_honest
+[2026-10-30 03:31:08] Notes: GRU-TiDE honest (2-layer GRU encoder + attention + multi-horizon decoder)
+[2026-10-30 03:31:08] =======================================================
+[2026-10-30 03:31:08] h= 1 | RMSE:  7.493 | R2: 0.8733 | RMSE_peaks:  17.01 | bias_peaks: -13.16 | skill: 0.4965
+[2026-10-30 03:31:08]   Saved D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\deep\preds\gru_honest_h1.parquet (val=108548, test=108512)
+[2026-10-30 03:31:08] h= 4 | RMSE: 10.170 | R2: 0.7667 | RMSE_peaks:  23.22 | bias_peaks: -17.76 | skill: 0.3165
+[2026-10-30 03:31:08]   Saved D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\deep\preds\gru_honest_h4.parquet (val=108551, test=108473)
+[2026-10-30 03:31:09] h= 8 | RMSE: 10.496 | R2: 0.7516 | RMSE_peaks:  23.05 | bias_peaks: -17.23 | skill: 0.2946
+[2026-10-30 03:31:09]   Saved D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\deep\preds\gru_honest_h8.parquet (val=108555, test=108421)
+[2026-10-30 03:31:09] h=12 | RMSE: 10.690 | R2: 0.7424 | RMSE_peaks:  24.04 | bias_peaks: -18.44 | skill: 0.2817
+[2026-10-30 03:31:09]   Saved D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\deep\preds\gru_honest_h12.parquet (val=108560, test=108369)
+[2026-10-30 03:31:09] h=24 | RMSE: 10.692 | R2: 0.7425 | RMSE_peaks:  22.72 | bias_peaks: -16.09 | skill: 0.2818
+[2026-10-30 03:31:10]   Saved D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\deep\preds\gru_honest_h24.parquet (val=108561, test=108213)
+[2026-10-30 03:31:10] h=48 | RMSE: 11.794 | R2: 0.6872 | RMSE_peaks:  22.91 | bias_peaks: -15.92 | skill: 0.2085
+[2026-10-30 03:31:10]   Saved D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\deep\preds\gru_honest_h48.parquet (val=108563, test=107909)
+[2026-10-30 03:31:10] 
+>>> BUILDING DEEP ENSEMBLE (HONEST)
+[2026-10-30 03:31:10] 
+=======================================================
+[2026-10-30 03:31:10] Evaluating and Logging Variant: ensemble_honest
+[2026-10-30 03:31:10] Notes: Deep Ensemble 50% TiDE-MSE + 30% TiDE-Quantile + 20% GRU-TiDE (honest)
+[2026-10-30 03:31:10] =======================================================
+[2026-10-30 03:31:10] h= 1 | RMSE:  6.770 | R2: 0.8966 | RMSE_peaks:  15.91 | bias_peaks: -12.08 | skill: 0.5450
+[2026-10-30 03:31:11]   Saved D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\deep\preds\ensemble_honest_h1.parquet (val=108548, test=108512)
+[2026-10-30 03:31:11] h= 4 | RMSE:  9.862 | R2: 0.7806 | RMSE_peaks:  24.88 | bias_peaks: -20.06 | skill: 0.3372
+[2026-10-30 03:31:11]   Saved D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\deep\preds\ensemble_honest_h4.parquet (val=108551, test=108473)
+[2026-10-30 03:31:11] h= 8 | RMSE: 10.234 | R2: 0.7638 | RMSE_peaks:  25.18 | bias_peaks: -20.28 | skill: 0.3123
+[2026-10-30 03:31:12]   Saved D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\deep\preds\ensemble_honest_h8.parquet (val=108555, test=108421)
+[2026-10-30 03:31:12] h=12 | RMSE: 10.283 | R2: 0.7616 | RMSE_peaks:  25.04 | bias_peaks: -20.04 | skill: 0.3091
+[2026-10-30 03:31:12]   Saved D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\deep\preds\ensemble_honest_h12.parquet (val=108560, test=108369)
+[2026-10-30 03:31:12] h=24 | RMSE: 10.251 | R2: 0.7633 | RMSE_peaks:  23.34 | bias_peaks: -17.42 | skill: 0.3114
+[2026-10-30 03:31:13]   Saved D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\deep\preds\ensemble_honest_h24.parquet (val=108561, test=108213)
+[2026-10-30 03:31:13] h=48 | RMSE: 11.213 | R2: 0.7172 | RMSE_peaks:  23.49 | bias_peaks: -17.01 | skill: 0.2475
+[2026-10-30 03:31:13]   Saved D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\deep\preds\ensemble_honest_h48.parquet (val=108563, test=107909)
+[2026-10-30 03:31:13] 
+>>> BUILDING DEEP ENSEMBLE (PP)
+[2026-10-30 03:31:13] 
+=======================================================
+[2026-10-30 03:31:13] Evaluating and Logging Variant: ensemble_pp
+[2026-10-30 03:31:13] Notes: Deep Ensemble 50% TiDE-MSE + 30% TiDE-Quantile + 20% GRU-TiDE (pp)
+[2026-10-30 03:31:13] =======================================================
+[2026-10-30 03:31:13] h= 1 | RMSE:  6.491 | R2: 0.9049 | RMSE_peaks:  14.64 | bias_peaks: -10.55 | skill: 0.5638
+[2026-10-30 03:31:14]   Saved D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\deep\preds\ensemble_pp_h1.parquet (val=108548, test=108512)
+[2026-10-30 03:31:14] h= 4 | RMSE:  9.150 | R2: 0.8111 | RMSE_peaks:  21.41 | bias_peaks: -16.17 | skill: 0.3850
+[2026-10-30 03:31:14]   Saved D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\deep\preds\ensemble_pp_h4.parquet (val=108551, test=108473)
+[2026-10-30 03:31:15] h= 8 | RMSE:  9.580 | R2: 0.7930 | RMSE_peaks:  22.08 | bias_peaks: -16.77 | skill: 0.3562
+[2026-10-30 03:31:15]   Saved D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\deep\preds\ensemble_pp_h8.parquet (val=108555, test=108421)
+[2026-10-30 03:31:15] h=12 | RMSE:  9.591 | R2: 0.7926 | RMSE_peaks:  21.80 | bias_peaks: -16.34 | skill: 0.3555
+[2026-10-30 03:31:16]   Saved D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\deep\preds\ensemble_pp_h12.parquet (val=108560, test=108369)
+[2026-10-30 03:31:16] h=24 | RMSE:  9.684 | R2: 0.7888 | RMSE_peaks:  21.18 | bias_peaks: -15.13 | skill: 0.3495
+[2026-10-30 03:31:16]   Saved D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\deep\preds\ensemble_pp_h24.parquet (val=108561, test=108213)
+[2026-10-30 03:31:17] h=48 | RMSE: 10.159 | R2: 0.7679 | RMSE_peaks:  21.91 | bias_peaks: -15.70 | skill: 0.3182
+[2026-10-30 03:31:17]   Saved D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\deep\preds\ensemble_pp_h48.parquet (val=108563, test=107909)
+[2026-10-30 03:31:17] 
+ALL RUNS COMPLETED IN 86.01 MINUTES (5160.5s)!

@@ -1,0 +1,62 @@
+﻿=====================================================================================
+INICIANDO FASE 2: noche2_refit CON NWP FEATURES (num_threads=5)
+=====================================================================================
+
+================================================================================
+  CARGANDO DATOS FASE 2 HORIZONTE h=24
+================================================================================
+  Referencia Fase 1 (refit_best) h=24 -> Val OOF: 9.8949 | Test: 9.9958
+
+  --- Ejecutando refit_nwp_best (h=24) ---
+      Fold Q1 | N=27010 | BestIter= 845 | RMSE= 9.958 | Tiempo=234.2s
+      Fold Q2 | N=26669 | BestIter= 344 | RMSE=10.992 | Tiempo=156.1s
+      Fold Q3 | N=27544 | BestIter= 867 | RMSE= 8.916 | Tiempo=253.7s
+      Fold Q4 | N=27338 | BestIter= 455 | RMSE= 9.419 | Tiempo=143.3s
+    Val OOF RMSE: 9.8420 (vs Fase 1 9.8949 -> -0.0529) | Pk RMSE:  21.16
+    Reentrenando 715 ßrboles con 3 semillas...
+    Test 2025 RMSE: 9.8640 (vs Fase 1 9.9958 -> -0.1317) | R2: 0.7809 | Pk RMSE:  22.18
+    Predicciones guardadas en D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche2\refit\preds\refit_nwp_best_h24.parquet
+
+  --- Ejecutando refit_nwp_peak_w (h=24) ---
+      Fold Q1 | N=27010 | BestIter= 970 | RMSE= 9.912 | Tiempo=227.7s
+      Fold Q2 | N=26669 | BestIter= 429 | RMSE=11.015 | Tiempo=128.7s
+      Fold Q3 | N=27544 | BestIter= 962 | RMSE= 8.879 | Tiempo=63349.4s
+      Fold Q4 | N=27338 | BestIter=1828 | RMSE= 9.678 | Tiempo=807.1s
+    Val OOF RMSE: 9.8913 (vs Fase 1 9.8949 -> -0.0036) | Pk RMSE:  19.90
+    Reentrenando 1063 ßrboles con 3 semillas...
+    Test 2025 RMSE: 9.8670 (vs Fase 1 9.9958 -> -0.1288) | R2: 0.7807 | Pk RMSE:  21.27
+    Predicciones guardadas en D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche2\refit\preds\refit_nwp_peak_w_h24.parquet
+
+================================================================================
+  CARGANDO DATOS FASE 2 HORIZONTE h=4
+================================================================================
+  Referencia Fase 1 (refit_best) h= 4 -> Val OOF: 8.5034 | Test: 8.7481
+
+  --- Ejecutando refit_nwp_best (h=4) ---
+      Fold Q1 | N=27005 | BestIter=1986 | RMSE= 8.389 | Tiempo=11962.9s
+      Fold Q2 | N=26675 | BestIter=1670 | RMSE=10.027 | Tiempo=571.1s
+      Fold Q3 | N=27578 | BestIter=1969 | RMSE= 7.797 | Tiempo=301.2s
+      Fold Q4 | N=27293 | BestIter=2000 | RMSE= 7.502 | Tiempo=287.5s
+    Val OOF RMSE: 8.4741 (vs Fase 1 8.5034 -> -0.0293) | Pk RMSE:  17.81
+    Reentrenando 2175 ßrboles con 3 semillas...
+    Test 2025 RMSE: 8.6160 (vs Fase 1 8.7481 -> -0.1321) | R2: 0.8325 | Pk RMSE:  19.93
+    Predicciones guardadas en D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche2\refit\preds\refit_nwp_best_h4.parquet
+
+  --- Ejecutando refit_nwp_peak_w (h=4) ---
+      Fold Q1 | N=27005 | BestIter=1996 | RMSE= 8.379 | Tiempo=259.4s
+      Fold Q2 | N=26675 | BestIter=1310 | RMSE=10.161 | Tiempo=275.1s
+      Fold Q3 | N=27578 | BestIter=1999 | RMSE= 7.799 | Tiempo=291.7s
+      Fold Q4 | N=27293 | BestIter=2000 | RMSE= 7.595 | Tiempo=304.1s
+    Val OOF RMSE: 8.5319 (vs Fase 1 8.5034 -> +0.0286) | Pk RMSE:  17.39
+    Reentrenando 2197 ßrboles con 3 semillas...
+    Test 2025 RMSE: 8.6068 (vs Fase 1 8.7481 -> -0.1412) | R2: 0.8329 | Pk RMSE:  19.40
+    Predicciones guardadas en D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche2\refit\preds\refit_nwp_peak_w_h4.parquet
+
+=====================================================================================
+FASE 2 FINALIZADA
+=====================================================================================
+ h          variant  val_OOF_RMSE  fase1_val_RMSE  diff_val_vs_f1  test_RMSE  fase1_test_RMSE  diff_test_vs_f1  test_R2  test_RMSE_peaks  test_bias_peaks  num_trees
+24   refit_nwp_best        9.8420          9.8949         -0.0529     9.8640           9.9958          -0.1317   0.7809            22.18           -16.41        715
+24 refit_nwp_peak_w        9.8913          9.8949         -0.0036     9.8670           9.9958          -0.1288   0.7807            21.27           -15.24       1063
+ 4   refit_nwp_best        8.4741          8.5034         -0.0293     8.6160           8.7481          -0.1321   0.8325            19.93           -14.42       2175
+ 4 refit_nwp_peak_w        8.5319          8.5034          0.0286     8.6068           8.7481          -0.1412   0.8329            19.40           -13.88       2197
