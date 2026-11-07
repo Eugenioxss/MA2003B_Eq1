@@ -1,0 +1,31 @@
+h,method,val_RMSE_OOF,test_RMSE,test_MAE,test_R2,test_RMSE_peaks,test_bias_peaks,test_skill,info
+1,best_individual,4.937,5.0048,3.3766,0.9435,10.3199,-5.1394,0.6636,Best: D_honest_noise
+1,simple_avg_topk,4.89,4.9642,3.3443,0.9444,10.229,-5.248,0.6664,"Top-5 avg (['D_honest_noise', 'resid_persist', 'E_honest_w', 'resid_persist_honest', 'per_hour'])"
+1,nnls_global,4.8903,4.9691,3.3515,0.9443,10.414,-5.6456,0.666,NNLS Global weights
+1,nnls_hourly_block,4.8897,4.9667,3.3514,0.9443,10.3805,-5.6187,0.6662,NNLS 4-Block weights
+1,stacking_lgbm,4.8733,4.9312,3.3173,0.9451,9.9979,-3.9266,0.6686,LGBM Stacking OOF (mean_iter=271)
+4,best_individual,8.6356,9.0039,6.3509,0.8171,21.696,-16.9062,0.3949,Best: D_honest_noise
+4,simple_avg_topk,8.6012,8.9534,6.3335,0.8192,21.3395,-16.5937,0.3983,"Top-2 avg (['D_honest_noise', 'E_honest_w'])"
+4,nnls_global,8.5705,8.9644,6.2894,0.8187,22.7333,-18.5045,0.3975,NNLS Global weights
+4,nnls_hourly_block,8.5465,8.9409,6.2905,0.8197,22.5045,-18.2121,0.3991,NNLS 4-Block weights
+4,stacking_lgbm,8.4968,8.7095,6.1852,0.8289,20.1187,-14.5271,0.4146,LGBM Stacking OOF (mean_iter=161)
+8,best_individual,9.6229,10.0536,7.1132,0.7721,25.0988,-20.396,0.3244,Best: D_honest_noise
+8,simple_avg_topk,9.5681,10.0223,7.0894,0.7735,25.3924,-20.8945,0.3265,"Top-3 avg (['D_honest_noise', 'E_honest_w', 'tuned_honest'])"
+8,nnls_global,9.5024,9.8637,6.9671,0.7806,25.407,-21.1505,0.3371,NNLS Global weights
+8,nnls_hourly_block,9.4976,9.871,6.9746,0.7803,25.3608,-21.0776,0.3367,NNLS 4-Block weights
+8,stacking_lgbm,9.4981,9.6839,6.9486,0.7885,23.0486,-17.403,0.3492,LGBM Stacking OOF (mean_iter=118)
+12,best_individual,9.8159,10.1345,7.2796,0.7685,24.0881,-19.0078,0.319,Best: E_honest_w
+12,simple_avg_topk,9.7599,10.1551,7.2245,0.7675,25.4334,-20.7726,0.3176,"Top-3 avg (['E_honest_w', 'D_honest_noise', 'tuned_honest'])"
+12,nnls_global,9.6681,9.953,7.0698,0.7767,25.1648,-20.7931,0.3312,NNLS Global weights
+12,nnls_hourly_block,9.6534,9.9579,7.0784,0.7765,24.9764,-20.5289,0.3309,NNLS 4-Block weights
+12,stacking_lgbm,9.696,9.8177,7.0664,0.7827,23.1672,-17.6137,0.3403,LGBM Stacking OOF (mean_iter=124)
+24,best_individual,10.0262,10.2382,7.3437,0.7639,24.1778,-19.0876,0.3123,Best: D_honest_noise
+24,simple_avg_topk,9.9745,10.2051,7.3256,0.7654,24.6359,-19.9247,0.3145,"Top-3 avg (['D_honest_noise', 'E_honest_w', 'tuned_honest'])"
+24,nnls_global,9.7984,9.8895,7.1157,0.7797,23.7734,-19.0349,0.3357,NNLS Global weights
+24,nnls_hourly_block,9.7847,9.8839,7.1225,0.78,23.5697,-18.7609,0.3361,NNLS 4-Block weights
+24,stacking_lgbm,9.9208,9.8844,7.1786,0.7799,22.3059,-16.4267,0.336,LGBM Stacking OOF (mean_iter=132)
+48,best_individual,11.1158,11.2337,8.1309,0.7162,27.0307,-22.5113,0.2461,Best: D_honest_noise
+48,simple_avg_topk,11.0499,11.1438,8.1361,0.7207,26.1587,-21.6162,0.2521,"Top-3 avg (['D_honest_noise', 'tuned_honest', 'E_honest_w'])"
+48,nnls_global,10.9466,10.8864,7.9347,0.7335,25.7795,-21.2878,0.2694,NNLS Global weights
+48,nnls_hourly_block,10.9307,10.8974,7.9471,0.7329,26.0058,-21.643,0.2686,NNLS 4-Block weights
+48,stacking_lgbm,11.099,11.1459,8.2152,0.7206,26.9629,-22.7597,0.252,LGBM Stacking OOF (mean_iter=95)

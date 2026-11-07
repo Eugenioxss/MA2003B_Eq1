@@ -1,0 +1,7 @@
+h,best_ens_method,best_individual,val_RMSE_OOF,indiv_test_RMSE,ens_test_RMSE,delta_RMSE,indiv_test_R2,ens_test_R2,indiv_bias_pk,ens_bias_pk,conformal_coverage,conformal_width,iso_test_RMSE,iso_bias_pk
+1,stacking_lgbm,D_honest_noise,4.8733,5.0048,4.9312,-0.0735,0.9435,0.9451,-5.14,-3.93,0.7956,10.04,4.9427,-3.49
+4,stacking_lgbm,D_honest_noise,8.4968,9.0039,8.7095,-0.2944,0.8171,0.8289,-16.91,-14.53,0.7942,18.77,8.7197,-14.68
+8,nnls_hourly_block,D_honest_noise,9.4976,10.0536,9.871,-0.1826,0.7721,0.7803,-20.4,-21.08,0.7951,21.03,9.5764,-16.74
+12,nnls_hourly_block,E_honest_w,9.6534,10.1345,9.9579,-0.1767,0.7685,0.7765,-19.01,-20.53,0.8029,21.69,9.7229,-16.9
+24,nnls_hourly_block,D_honest_noise,9.7847,10.2382,9.8839,-0.3544,0.7639,0.78,-19.09,-18.76,0.803,21.99,9.7531,-15.94
+48,nnls_hourly_block,D_honest_noise,10.9307,11.2337,10.8974,-0.3363,0.7162,0.7329,-22.51,-21.64,0.8091,24.99,10.9186,-21.73

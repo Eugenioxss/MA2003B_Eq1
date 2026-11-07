@@ -1,0 +1,103 @@
+[2026-10-30 03:54:10] =====================================================================
+[2026-10-30 03:54:10]   FASE 2: CORRIDA CON METEOROLOGIA HONESTA (v3_base cache)
+[2026-10-30 03:54:10] =====================================================================
+[2026-10-30 03:54:10] 
+Cargando cache v3_base para h=1 (D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\v3_base\cache\features_h1.parquet)...
+[2026-10-30 03:54:10] Cache cargado en 0.41s | 198 features honestas.
+[2026-10-30 03:54:11] --- [h=1] direct_base_honest ---
+[2026-10-30 03:58:47] =====================================================================
+[2026-10-30 03:58:47]   FASE 2: CORRIDA CON METEOROLOGIA HONESTA (v3_base cache)
+[2026-10-30 03:58:47] =====================================================================
+[2026-10-30 03:58:47] 
+Cargando cache v3_base para h=1 (D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\v3_base\cache\features_h1.parquet)...
+[2026-10-30 03:58:47] Cache cargado en 0.43s | 198 features honestas.
+[2026-10-30 03:58:48] --- [h=1] direct_base_honest ---
+[2026-10-30 04:02:06]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\direct_base_honest_h1.parquet (217,060 filas)
+[2026-10-30 04:02:06]   [direct_base_honest] h= 1 | Val RMSE: 5.0032 | Test RMSE: 5.0818 | Test Skill: 0.6585
+[2026-10-30 04:02:06] --- [h=1] resid_persist_honest ---
+[2026-10-30 04:06:06]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\resid_persist_honest_h1.parquet (217,060 filas)
+[2026-10-30 04:06:06]   [resid_persist_honest] h= 1 | Val RMSE: 4.9734 | Test RMSE: 5.0553 | Test Skill: 0.6602
+[2026-10-30 04:06:06] --- [h=1] resid_clim_honest ---
+[2026-10-30 04:10:33]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\resid_clim_honest_h1.parquet (217,060 filas)
+[2026-10-30 04:10:33]   [resid_clim_honest] h= 1 | Val RMSE: 5.2835 | Test RMSE: 5.3726 | Test Skill: 0.6389
+[2026-10-30 04:10:33] --- [h=1] per_hour_honest ---
+[2026-10-30 04:13:33]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\per_hour_honest_h1.parquet (217,060 filas)
+[2026-10-30 04:13:34]   [per_hour_honest] h= 1 | Val RMSE: 4.9983 | Test RMSE: 5.0671 | Test Skill: 0.6595
+[2026-10-30 04:13:34] 
+Cargando cache v3_base para h=4 (D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\v3_base\cache\features_h4.parquet)...
+[2026-10-30 04:13:34] Cache cargado en 0.36s | 198 features honestas.
+[2026-10-30 04:13:34] --- [h=4] direct_base_honest ---
+[2026-10-30 04:17:02]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\direct_base_honest_h4.parquet (217,024 filas)
+[2026-10-30 04:17:02]   [direct_base_honest] h= 4 | Val RMSE: 8.9065 | Test RMSE: 9.3811 | Test Skill: 0.3695
+[2026-10-30 04:17:02] --- [h=4] resid_persist_honest ---
+[2026-10-30 04:20:44]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\resid_persist_honest_h4.parquet (217,024 filas)
+[2026-10-30 04:20:44]   [resid_persist_honest] h= 4 | Val RMSE: 8.8712 | Test RMSE: 9.3271 | Test Skill: 0.3731
+[2026-10-30 04:20:44] --- [h=4] resid_clim_honest ---
+[2026-10-30 04:24:31]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\resid_clim_honest_h4.parquet (217,024 filas)
+[2026-10-30 04:24:31]   [resid_clim_honest] h= 4 | Val RMSE: 9.1152 | Test RMSE: 9.5312 | Test Skill: 0.3594
+[2026-10-30 04:24:31] --- [h=4] per_hour_honest ---
+[2026-10-30 04:27:53]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\per_hour_honest_h4.parquet (217,024 filas)
+[2026-10-30 04:27:53]   [per_hour_honest] h= 4 | Val RMSE: 8.8614 | Test RMSE: 9.3228 | Test Skill: 0.3734
+[2026-10-30 04:27:53] 
+Cargando cache v3_base para h=8 (D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\v3_base\cache\features_h8.parquet)...
+[2026-10-30 04:27:53] Cache cargado en 0.36s | 198 features honestas.
+[2026-10-30 04:27:54] --- [h=8] direct_base_honest ---
+[2026-10-30 04:31:26]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\direct_base_honest_h8.parquet (216,976 filas)
+[2026-10-30 04:31:26]   [direct_base_honest] h= 8 | Val RMSE: 9.8448 | Test RMSE: 10.3710 | Test Skill: 0.3031
+[2026-10-30 04:31:26] --- [h=8] resid_persist_honest ---
+[2026-10-30 04:35:35]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\resid_persist_honest_h8.parquet (216,976 filas)
+[2026-10-30 04:35:35]   [resid_persist_honest] h= 8 | Val RMSE: 9.8492 | Test RMSE: 10.4109 | Test Skill: 0.3004
+[2026-10-30 04:35:35] --- [h=8] resid_clim_honest ---
+[2026-10-30 04:39:20]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\resid_clim_honest_h8.parquet (216,976 filas)
+[2026-10-30 04:39:20]   [resid_clim_honest] h= 8 | Val RMSE: 10.0357 | Test RMSE: 10.5589 | Test Skill: 0.2904
+[2026-10-30 04:39:20] --- [h=8] per_hour_honest ---
+[2026-10-30 04:43:09]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\per_hour_honest_h8.parquet (216,976 filas)
+[2026-10-30 04:43:09]   [per_hour_honest] h= 8 | Val RMSE: 9.8614 | Test RMSE: 10.4401 | Test Skill: 0.2984
+[2026-10-30 04:43:09] 
+Cargando cache v3_base para h=12 (D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\v3_base\cache\features_h12.parquet)...
+[2026-10-30 04:43:09] Cache cargado en 0.36s | 198 features honestas.
+[2026-10-30 04:43:10] --- [h=12] direct_base_honest ---
+[2026-10-30 04:46:28]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\direct_base_honest_h12.parquet (216,929 filas)
+[2026-10-30 04:46:28]   [direct_base_honest] h=12 | Val RMSE: 9.9960 | Test RMSE: 10.4465 | Test Skill: 0.2981
+[2026-10-30 04:46:28] --- [h=12] resid_persist_honest ---
+[2026-10-30 04:50:46]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\resid_persist_honest_h12.parquet (216,929 filas)
+[2026-10-30 04:50:46]   [resid_persist_honest] h=12 | Val RMSE: 10.0248 | Test RMSE: 10.5367 | Test Skill: 0.2920
+[2026-10-30 04:50:46] --- [h=12] resid_clim_honest ---
+[2026-10-30 04:53:18]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\resid_clim_honest_h12.parquet (216,929 filas)
+[2026-10-30 04:53:18]   [resid_clim_honest] h=12 | Val RMSE: 10.2552 | Test RMSE: 10.6886 | Test Skill: 0.2818
+[2026-10-30 04:53:18] --- [h=12] per_hour_honest ---
+[2026-10-30 04:57:05]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\per_hour_honest_h12.parquet (216,929 filas)
+[2026-10-30 04:57:05]   [per_hour_honest] h=12 | Val RMSE: 10.0313 | Test RMSE: 10.4677 | Test Skill: 0.2966
+[2026-10-30 04:57:05] 
+Cargando cache v3_base para h=24 (D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\v3_base\cache\features_h24.parquet)...
+[2026-10-30 04:57:06] Cache cargado en 0.39s | 198 features honestas.
+[2026-10-30 04:57:06] --- [h=24] direct_base_honest ---
+[2026-10-30 04:59:17]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\direct_base_honest_h24.parquet (216,774 filas)
+[2026-10-30 04:59:17]   [direct_base_honest] h=24 | Val RMSE: 10.2289 | Test RMSE: 10.5085 | Test Skill: 0.2941
+[2026-10-30 04:59:17] --- [h=24] resid_persist_honest ---
+[2026-10-30 05:01:04]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\resid_persist_honest_h24.parquet (216,774 filas)
+[2026-10-30 05:01:04]   [resid_persist_honest] h=24 | Val RMSE: 10.2383 | Test RMSE: 10.5149 | Test Skill: 0.2937
+[2026-10-30 05:01:04] --- [h=24] resid_clim_honest ---
+[2026-10-30 05:03:03]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\resid_clim_honest_h24.parquet (216,774 filas)
+[2026-10-30 05:03:03]   [resid_clim_honest] h=24 | Val RMSE: 10.5144 | Test RMSE: 10.8143 | Test Skill: 0.2736
+[2026-10-30 05:03:03] --- [h=24] per_hour_honest ---
+[2026-10-30 05:05:10]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\per_hour_honest_h24.parquet (216,774 filas)
+[2026-10-30 05:05:10]   [per_hour_honest] h=24 | Val RMSE: 10.1951 | Test RMSE: 10.5386 | Test Skill: 0.2921
+[2026-10-30 05:05:10] 
+Cargando cache v3_base para h=48 (D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\v3_base\cache\features_h48.parquet)...
+[2026-10-30 05:05:10] Cache cargado en 0.40s | 198 features honestas.
+[2026-10-30 05:05:11] --- [h=48] direct_base_honest ---
+[2026-10-30 05:07:01]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\direct_base_honest_h48.parquet (216,472 filas)
+[2026-10-30 05:07:01]   [direct_base_honest] h=48 | Val RMSE: 11.2212 | Test RMSE: 11.3473 | Test Skill: 0.2385
+[2026-10-30 05:07:01] --- [h=48] resid_persist_honest ---
+[2026-10-30 05:09:16]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\resid_persist_honest_h48.parquet (216,472 filas)
+[2026-10-30 05:09:16]   [resid_persist_honest] h=48 | Val RMSE: 11.2620 | Test RMSE: 11.3128 | Test Skill: 0.2408
+[2026-10-30 05:09:16] --- [h=48] resid_clim_honest ---
+[2026-10-30 05:11:09]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\resid_clim_honest_h48.parquet (216,472 filas)
+[2026-10-30 05:11:09]   [resid_clim_honest] h=48 | Val RMSE: 11.4669 | Test RMSE: 11.6234 | Test Skill: 0.2199
+[2026-10-30 05:11:09] --- [h=48] per_hour_honest ---
+[2026-10-30 05:12:46]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\per_hour_honest_h48.parquet (216,472 filas)
+[2026-10-30 05:12:46]   [per_hour_honest] h=48 | Val RMSE: 11.2154 | Test RMSE: 11.3625 | Test Skill: 0.2374
+[2026-10-30 05:12:46] =====================================================================
+[2026-10-30 05:12:46]   FASE 2 FINALIZADA CON EXITO
+[2026-10-30 05:12:46] =====================================================================

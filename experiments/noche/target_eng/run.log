@@ -1,0 +1,133 @@
+[2026-10-30 02:03:07] =====================================================================
+[2026-10-30 02:03:07]   NOCHE TARGET ENGINEERING - CORRIDA COMPLETA DE VARIANTES (1 - 5)
+[2026-10-30 02:03:07] =====================================================================
+[2026-10-30 02:03:08] 
+======================================================================
+[2026-10-30 02:03:08]   INICIANDO VARIANTE: direct_base
+[2026-10-30 02:03:08] ======================================================================
+[2026-10-30 02:07:39]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\direct_base_h1.parquet (217,060 filas)
+[2026-10-30 02:07:39] [direct_base] h= 1 | Val RMSE: 4.9964 | Test RMSE: 5.0574 | Test R2: 0.9423 | Test Skill: 0.6601
+[2026-10-30 02:11:28]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\direct_base_h4.parquet (217,024 filas)
+[2026-10-30 02:11:28] [direct_base] h= 4 | Val RMSE: 9.1988 | Test RMSE: 9.6434 | Test R2: 0.7902 | Test Skill: 0.3519
+[2026-10-30 02:13:29]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\direct_base_h8.parquet (216,976 filas)
+[2026-10-30 02:13:29] [direct_base] h= 8 | Val RMSE: 10.6896 | Test RMSE: 11.1948 | Test R2: 0.7174 | Test Skill: 0.2477
+[2026-10-30 02:15:37]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\direct_base_h12.parquet (216,929 filas)
+[2026-10-30 02:15:37] [direct_base] h=12 | Val RMSE: 11.1512 | Test RMSE: 11.6798 | Test R2: 0.6925 | Test Skill: 0.2152
+[2026-10-30 02:17:01]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\direct_base_h24.parquet (216,774 filas)
+[2026-10-30 02:17:01] [direct_base] h=24 | Val RMSE: 11.9153 | Test RMSE: 12.3938 | Test R2: 0.6540 | Test Skill: 0.1675
+[2026-10-30 02:18:02]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\direct_base_h48.parquet (216,472 filas)
+[2026-10-30 02:18:02] [direct_base] h=48 | Val RMSE: 13.1506 | Test RMSE: 13.7866 | Test R2: 0.5725 | Test Skill: 0.0747
+[2026-10-30 02:18:02] 
+======================================================================
+[2026-10-30 02:18:02]   INICIANDO VARIANTE: resid_clim
+[2026-10-30 02:18:02] ======================================================================
+[2026-10-30 02:22:26]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\resid_clim_h1.parquet (217,060 filas)
+[2026-10-30 02:22:26] [resid_clim] h= 1 | Val RMSE: 5.2595 | Test RMSE: 5.3367 | Test R2: 0.9357 | Test Skill: 0.6413
+[2026-10-30 02:26:20]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\resid_clim_h4.parquet (217,024 filas)
+[2026-10-30 02:26:20] [resid_clim] h= 4 | Val RMSE: 9.4197 | Test RMSE: 9.8912 | Test R2: 0.7793 | Test Skill: 0.3352
+[2026-10-30 02:28:47]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\resid_clim_h8.parquet (216,976 filas)
+[2026-10-30 02:28:47] [resid_clim] h= 8 | Val RMSE: 10.9099 | Test RMSE: 11.4489 | Test R2: 0.7044 | Test Skill: 0.2306
+[2026-10-30 02:30:59]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\resid_clim_h12.parquet (216,929 filas)
+[2026-10-30 02:30:59] [resid_clim] h=12 | Val RMSE: 11.3409 | Test RMSE: 11.8666 | Test R2: 0.6826 | Test Skill: 0.2026
+[2026-10-30 02:32:22]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\resid_clim_h24.parquet (216,774 filas)
+[2026-10-30 02:32:22] [resid_clim] h=24 | Val RMSE: 12.1361 | Test RMSE: 12.7353 | Test R2: 0.6347 | Test Skill: 0.1445
+[2026-10-30 02:33:20]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\resid_clim_h48.parquet (216,472 filas)
+[2026-10-30 02:33:20] [resid_clim] h=48 | Val RMSE: 13.2483 | Test RMSE: 14.0151 | Test R2: 0.5582 | Test Skill: 0.0594
+[2026-10-30 02:33:20] 
+======================================================================
+[2026-10-30 02:33:20]   INICIANDO VARIANTE: resid_persist
+[2026-10-30 02:33:20] ======================================================================
+[2026-10-30 02:34:33] =====================================================================
+[2026-10-30 02:34:33]   NOCHE TARGET ENGINEERING - CORRIDA COMPLETA DE VARIANTES (1 - 5)
+[2026-10-30 02:34:33] =====================================================================
+[2026-10-30 02:34:34] Variantes ya completadas (h=48): {'resid_clim', 'direct_base'}
+[2026-10-30 02:34:34] direct_base ya completado con éxito, continuando con la siguiente variante.
+[2026-10-30 02:34:34] resid_clim ya completado con éxito, continuando con la siguiente variante.
+[2026-10-30 02:34:34] 
+======================================================================
+[2026-10-30 02:34:34]   INICIANDO VARIANTE: resid_persist
+[2026-10-30 02:34:34] ======================================================================
+[2026-10-30 02:38:03]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\resid_persist_h1.parquet (217,060 filas)
+[2026-10-30 02:38:04] [resid_persist] h= 1 | Val RMSE: 4.9728 | Test RMSE: 5.0386 | Test R2: 0.9427 | Test Skill: 0.6614
+[2026-10-30 02:42:18]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\resid_persist_h4.parquet (217,024 filas)
+[2026-10-30 02:42:18] [resid_persist] h= 4 | Val RMSE: 9.1740 | Test RMSE: 9.6522 | Test R2: 0.7899 | Test Skill: 0.3513
+[2026-10-30 02:45:13]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\resid_persist_h8.parquet (216,976 filas)
+[2026-10-30 02:45:13] [resid_persist] h= 8 | Val RMSE: 10.7203 | Test RMSE: 11.2031 | Test R2: 0.7170 | Test Skill: 0.2471
+[2026-10-30 02:47:38]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\resid_persist_h12.parquet (216,929 filas)
+[2026-10-30 02:47:38] [resid_persist] h=12 | Val RMSE: 11.1785 | Test RMSE: 11.6606 | Test R2: 0.6935 | Test Skill: 0.2165
+[2026-10-30 02:49:23]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\resid_persist_h24.parquet (216,774 filas)
+[2026-10-30 02:49:23] [resid_persist] h=24 | Val RMSE: 11.9225 | Test RMSE: 12.3889 | Test R2: 0.6543 | Test Skill: 0.1678
+[2026-10-30 02:50:30]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\resid_persist_h48.parquet (216,472 filas)
+[2026-10-30 02:50:30] [resid_persist] h=48 | Val RMSE: 13.1178 | Test RMSE: 13.6860 | Test R2: 0.5787 | Test Skill: 0.0815
+[2026-10-30 02:50:30] 
+======================================================================
+[2026-10-30 02:50:30]   INICIANDO VARIANTE: transformaciones de target (sqrt, log1p, tweedie)
+[2026-10-30 02:50:30] ======================================================================
+[2026-10-30 02:50:30] Screening de transformaciones en val 2024 (h in [1, 12, 24])...
+[2026-10-30 02:53:52]   [Screening] sqrt         h= 1 | Val RMSE = 4.9932
+[2026-10-30 02:57:07]   [Screening] log1p        h= 1 | Val RMSE = 5.0143
+[2026-10-30 03:00:14]   [Screening] tweedie_p12  h= 1 | Val RMSE = 4.9879
+[2026-10-30 03:03:32]   [Screening] tweedie_p15  h= 1 | Val RMSE = 4.9934
+[2026-10-30 03:06:35]   [Screening] sqrt         h=12 | Val RMSE = 11.2473
+[2026-10-30 03:08:35]   [Screening] log1p        h=12 | Val RMSE = 11.3028
+[2026-10-30 03:10:17]   [Screening] tweedie_p12  h=12 | Val RMSE = 11.2168
+[2026-10-30 03:12:18]   [Screening] tweedie_p15  h=12 | Val RMSE = 11.2612
+[2026-10-30 03:13:34]   [Screening] sqrt         h=24 | Val RMSE = 11.9810
+[2026-10-30 03:14:59]   [Screening] log1p        h=24 | Val RMSE = 11.9606
+[2026-10-30 03:16:17]   [Screening] tweedie_p12  h=24 | Val RMSE = 11.9139
+[2026-10-30 03:17:26]   [Screening] tweedie_p15  h=24 | Val RMSE = 11.9363
+[2026-10-30 03:17:26] ==> Ganador de transformacion en Val 2024: 'tweedie_p12' (RMSE prom: 9.3729) vs {'sqrt': np.float64(9.407187961564718), 'log1p': np.float64(9.42590449665884), 'tweedie_p12': np.float64(9.372853492514528), 'tweedie_p15': np.float64(9.396945275243612)}
+[2026-10-30 03:17:26] 
+Ejecutando 'tweedie_p12' en los 6 horizontes completos...
+[2026-10-30 03:20:45]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\tweedie_p12_h1.parquet (217,060 filas)
+[2026-10-30 03:20:45] [tweedie_p12] h= 1 | Val RMSE: 4.9879 | Test RMSE: 5.0723 | Test R2: 0.9419 | Test Skill: 0.6591
+[2026-10-30 03:23:39]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\tweedie_p12_h4.parquet (217,024 filas)
+[2026-10-30 03:23:39] [tweedie_p12] h= 4 | Val RMSE: 9.2542 | Test RMSE: 9.7020 | Test R2: 0.7877 | Test Skill: 0.3479
+[2026-10-30 03:26:11]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\tweedie_p12_h8.parquet (216,976 filas)
+[2026-10-30 03:26:11] [tweedie_p12] h= 8 | Val RMSE: 10.7783 | Test RMSE: 11.2393 | Test R2: 0.7152 | Test Skill: 0.2447
+[2026-10-30 03:27:55]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\tweedie_p12_h12.parquet (216,929 filas)
+[2026-10-30 03:27:55] [tweedie_p12] h=12 | Val RMSE: 11.2168 | Test RMSE: 11.6887 | Test R2: 0.6920 | Test Skill: 0.2146
+[2026-10-30 03:29:16]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\tweedie_p12_h24.parquet (216,774 filas)
+[2026-10-30 03:29:16] [tweedie_p12] h=24 | Val RMSE: 11.9139 | Test RMSE: 12.4059 | Test R2: 0.6534 | Test Skill: 0.1666
+[2026-10-30 03:30:16]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\tweedie_p12_h48.parquet (216,472 filas)
+[2026-10-30 03:30:16] [tweedie_p12] h=48 | Val RMSE: 13.1692 | Test RMSE: 13.8437 | Test R2: 0.5690 | Test Skill: 0.0709
+[2026-10-30 03:30:16] 
+======================================================================
+[2026-10-30 03:30:16]   INICIANDO VARIANTE: per_hour (features de t+h explicitas + delta_clim)
+[2026-10-30 03:30:16] ======================================================================
+[2026-10-30 03:33:46]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\per_hour_h1.parquet (217,060 filas)
+[2026-10-30 03:33:46] [per_hour] h= 1 | Val RMSE: 4.9819 | Test RMSE: 5.0560 | Test R2: 0.9423 | Test Skill: 0.6602
+[2026-10-30 03:37:47]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\per_hour_h4.parquet (217,024 filas)
+[2026-10-30 03:37:47] [per_hour] h= 4 | Val RMSE: 9.1642 | Test RMSE: 9.6220 | Test R2: 0.7912 | Test Skill: 0.3533
+[2026-10-30 03:40:04]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\per_hour_h8.parquet (216,976 filas)
+[2026-10-30 03:40:04] [per_hour] h= 8 | Val RMSE: 10.7573 | Test RMSE: 11.3094 | Test R2: 0.7116 | Test Skill: 0.2400
+[2026-10-30 03:42:33]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\per_hour_h12.parquet (216,929 filas)
+[2026-10-30 03:42:33] [per_hour] h=12 | Val RMSE: 11.1707 | Test RMSE: 11.7243 | Test R2: 0.6901 | Test Skill: 0.2122
+[2026-10-30 03:43:37]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\per_hour_h24.parquet (216,774 filas)
+[2026-10-30 03:43:37] [per_hour] h=24 | Val RMSE: 11.9031 | Test RMSE: 12.4605 | Test R2: 0.6503 | Test Skill: 0.1630
+[2026-10-30 03:44:31]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\per_hour_h48.parquet (216,472 filas)
+[2026-10-30 03:44:31] [per_hour] h=48 | Val RMSE: 13.0728 | Test RMSE: 13.8386 | Test R2: 0.5693 | Test Skill: 0.0713
+[2026-10-30 03:44:31] 
+======================================================================
+[2026-10-30 03:44:31]   INICIANDO VARIANTE: multi_h_global (un solo modelo con todas las h)
+[2026-10-30 03:44:31] ======================================================================
+[2026-10-30 03:44:32] Construyendo datasets apilados con h in [1, 4, 8, 12, 24, 48]...
+[2026-10-30 03:44:36] Dataset global creado: Train = 1,085,957 filas, Val = 651,338 filas, 181 features.
+[2026-10-30 03:44:36] Entrenando modelo global unico...
+[2026-10-30 03:52:45] Modelo global entrenado en 489.2s (best_iter=1324).
+[2026-10-30 03:52:50]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\multi_h_global_h1.parquet (217,060 filas)
+[2026-10-30 03:52:50] [multi_h_global] h= 1 | Val RMSE: 5.6260 | Test RMSE: 5.7827 | Test R2: 0.9245 | Test Skill: 0.6114
+[2026-10-30 03:52:56]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\multi_h_global_h4.parquet (217,024 filas)
+[2026-10-30 03:52:56] [multi_h_global] h= 4 | Val RMSE: 9.5554 | Test RMSE: 10.0901 | Test R2: 0.7704 | Test Skill: 0.3219
+[2026-10-30 03:53:02]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\multi_h_global_h8.parquet (216,976 filas)
+[2026-10-30 03:53:02] [multi_h_global] h= 8 | Val RMSE: 10.8340 | Test RMSE: 11.5167 | Test R2: 0.7009 | Test Skill: 0.2261
+[2026-10-30 03:53:08]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\multi_h_global_h12.parquet (216,929 filas)
+[2026-10-30 03:53:08] [multi_h_global] h=12 | Val RMSE: 11.2021 | Test RMSE: 11.8371 | Test R2: 0.6841 | Test Skill: 0.2046
+[2026-10-30 03:53:14]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\multi_h_global_h24.parquet (216,774 filas)
+[2026-10-30 03:53:14] [multi_h_global] h=24 | Val RMSE: 11.9205 | Test RMSE: 12.4806 | Test R2: 0.6492 | Test Skill: 0.1616
+[2026-10-30 03:53:20]   -> Predicciones guardadas: D:\Codingggg\Notas\Multivariados\MA2003B_Eq1\experiments\noche\target_eng\preds\multi_h_global_h48.parquet (216,472 filas)
+[2026-10-30 03:53:20] [multi_h_global] h=48 | Val RMSE: 13.0869 | Test RMSE: 13.8155 | Test R2: 0.5707 | Test Skill: 0.0728
+[2026-10-30 03:53:21] 
+======================================================================
+[2026-10-30 03:53:21]   TODAS LAS VARIANTES 1-5 FINALIZADAS CON EXITO EN 4727.3s
+[2026-10-30 03:53:21] =====================================================================

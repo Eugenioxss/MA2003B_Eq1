@@ -1,0 +1,16 @@
+{
+  "horizon": 8,
+  "val_rmse_optuna": 9.887396216077248,
+  "best_params": {
+    "num_leaves": 237,
+    "learning_rate": 0.02013966656696033,
+    "min_child_samples": 49,
+    "colsample_bytree": 0.5211285423175327,
+    "subsample": 0.8165661237444429,
+    "reg_lambda": 0.26363334118988235,
+    "reg_alpha": 0.004308502356921715,
+    "max_bin": 127
+  },
+  "n_features": 178,
+  "top_features_pct": 0.8999999999999999
+}
