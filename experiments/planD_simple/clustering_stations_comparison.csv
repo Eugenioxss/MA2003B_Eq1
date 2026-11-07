@@ -1,0 +1,16 @@
+Estacion,Region_Manual,Cluster_Jerarquico,Cluster_KMeans
+CE,Centro/Norte,2,0
+NE,Noreste,3,3
+NE2,Noreste,1,2
+NE3,Noreste,0,1
+NO,Centro/Norte,0,0
+NO2,Poniente/Sierra,3,3
+NO3,Poniente/Sierra,3,3
+NTE,Centro/Norte,0,1
+NTE2,Centro/Norte,1,2
+SE,Sur,2,0
+SE2,Sur,0,1
+SE3,Sur,0,1
+SO,Poniente/Sierra,3,3
+SO2,Poniente/Sierra,2,0
+SUR,Sur,2,0

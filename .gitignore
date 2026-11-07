@@ -20,3 +20,6 @@ secrets.json
 .DS_Store
 Thumbs.db
 
+# Cachés intermedios pesados (>100 MB límite de GitHub)
+experiments/noche/v3_base/cache/features_h*.parquet
+experiments/noche/target_eng/_cache_v4.parquet
